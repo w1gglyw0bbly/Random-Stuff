@@ -47,91 +47,91 @@ class Minesweeper:
     def inputNums(self, boardWBombs):
         for i in range(len(boardWBombs)):
             for j in range(len(boardWBombs[i])):
-                boardWBombs[i][j] = self.checkNumber(i, j)
-        fullBoard = self.boardWBombs
+                boardWBombs[i][j] = self.checkNumber(i, j, boardWBombs)
+        fullBoard = boardWBombs
         return fullBoard
     
-    def checkUL(self, y, x):
+    def checkUL(self, y, x, boardWBombs):
         if y - 1 < 0 or x - 1 < 0:
             return False
-        elif self.boardWBombs[y - 1][9 + (x - 9) - 1] == 'B':
+        elif boardWBombs[y - 1][9 + (x - 9) - 1] == 'B':
             return True
         return False
 
-    def checkU(self, y, x):
+    def checkU(self, y, x, boardWBombs):
         if y - 1 < 0:
             return False
-        elif self.boardWBombs[y - 1][9 + (x - 9)] == 'B':
+        elif boardWBombs[y - 1][9 + (x - 9)] == 'B':
             return True
         return False
 
-    def checkUR(self, y, x):
+    def checkUR(self, y, x, boardWBombs):
         if y - 1 < 0 or x + 1 > self.rowEnd - 1:
             return False
-        elif self.boardWBombs[y - 1][9 + (x - 9) + 1] == 'B':
+        elif boardWBombs[y - 1][9 + (x - 9) + 1] == 'B':
             return True
         return False
 
-    def checkR(self, y, x):
+    def checkR(self, y, x, boardWBombs):
         if x + 1 > self.rowEnd - 1:
             return False
-        elif self.boardWBombs[y][x + 1] == 'B':
+        elif boardWBombs[y][x + 1] == 'B':
             return True
         return False
 
-    def checkBR(self, y, x):
+    def checkBR(self, y, x, boardWBombs):
         if y + 1 > 7 or x + 1 > self.rowEnd - 1:
             return False
-        elif self.boardWBombs[y + 1][9 - (9 - x) + 1] == 'B':
+        elif boardWBombs[y + 1][9 - (9 - x) + 1] == 'B':
             return True
         return False
 
-    def checkB(self, y, x):
+    def checkB(self, y, x, boardWBombs):
         if y + 1 > 7:
             return False
-        elif self.boardWBombs[y + 1][9 - (9 - x)] == 'B':
+        elif boardWBombs[y + 1][9 - (9 - x)] == 'B':
             return True
         return False
 
-    def checkBL(self, y, x):
+    def checkBL(self, y, x, boardWBombs):
         if y + 1 > 7 or x - 1 < 0:
             return False
-        elif self.boardWBombs[y + 1][9 - (9 - x) - 1] == 'B':
+        elif boardWBombs[y + 1][9 - (9 - x) - 1] == 'B':
             return True
         return False      
 
-    def checkL(self, y, x):
+    def checkL(self, y, x, boardWBombs):
         if x - 1 < 0:
             return False
-        elif self.boardWBombs[y][x - 1] == 'B':
+        elif boardWBombs[y][x - 1] == 'B':
             return True
         return False
 
-    def checkS(self, y, x):
-        if self.boardWBombs[y][x] == 'B':
+    def checkS(self, y, x, boardWBombs):
+        if boardWBombs[y][x] == 'B':
             return True
         return False
 
-    def checkNumber(self, y, x):
+    def checkNumber(self, y, x, boardWBombs):
         bombs = 0
         
-        if self.checkS(y, x) == True:
+        if self.checkS(y, x, boardWBombs) == True:
             return 'B'
-        if self.checkUL(y, x) == True:
+        if self.checkUL(y, x, boardWBombs) == True:
             bombs += 1
-        if self.checkU(y, x) == True:
+        if self.checkU(y, x, boardWBombs) == True:
             bombs += 1
-        if self.checkUR(y, x) == True:
+        if self.checkUR(y, x, boardWBombs) == True:
             bombs += 1
-        if self.checkR(y, x) == True:
+        if self.checkR(y, x, boardWBombs) == True:
             bombs += 1
-        if self.checkBR(y, x) == True:
+        if self.checkBR(y, x, boardWBombs) == True:
             bombs += 1
-        if self.checkB(y, x) == True:
+        if self.checkB(y, x, boardWBombs) == True:
             bombs += 1
-        if self.checkBL(y, x) == True:
+        if self.checkBL(y, x, boardWBombs) == True:
             bombs += 1
-        if self.checkL(y, x) == True:
+        if self.checkL(y, x, boardWBombs) == True:
             bombs += 1
 
         return bombs
@@ -213,7 +213,7 @@ class Minesweeper:
 
 
     #Accessors
-    def getBombs():
+    def getBombs(self):
         return self.bombs
 
     def getDiff():
@@ -223,7 +223,7 @@ class Minesweeper:
     def setBombs(): 
         self.bombs = self.genBombs(self.diff)
 
-    def setDiff(diff):
+    def setDiff(self, diff):
         self.diff = diff
 
     def setBlankBoard():
@@ -233,13 +233,11 @@ class Minesweeper:
         self.fullBoard = self.inputNums(self.inputBombs(self.generateBlankBoard(self.colEnd, self.rowEnd), self.genBombs(self.diffBombNum, self.colEnd, self.rowEnd)))
         print(self.fullBoard)
         
-'''  
+
 #Testing Class Objects and Stuff
 
 test = Minesweeper('Easy')
 
-print(test.bombs)
-test.inputBombs(test.blankBoard, test.bombs)
-
-print(test.inputNums(test.boardWBombs))
-'''
+print('test: ' + str(test.fullBoard))
+print('test2: ')
+test.newFullBoard()
