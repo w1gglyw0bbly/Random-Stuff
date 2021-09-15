@@ -21,6 +21,12 @@ def test(board, button, buttons, y, x):
         button.config(state = 'disabled', bg = 'light grey')
     elif board.fullBoard[y][x] == 1:
         button.config(state = 'disabled', bg = 'light green', text = str(board.fullBoard[y][x]))
+    elif board.fullBoard[y][x] == 2:
+        button.config(state = 'disabled', bg = 'pink', text = str(board.fullBoard[y][x]))
+    elif board.fullBoard[y][x] == 3:
+        button.config(state = 'disabled', bg = 'light blue', text = str(board.fullBoard[y][x]))
+    elif board.fullBoard[y][x] == 4:
+        button.config(state = 'disabled', bg = 'purple', text = str(board.fullBoard[y][x]))     
     else:
         button.config(state = 'disabled', text = str(board.fullBoard[y][x]))
 
