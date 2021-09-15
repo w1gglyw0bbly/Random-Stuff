@@ -1,7 +1,7 @@
 import tkinter as tk
 import sys
 from functools import partial
-
+ 
 sys.path.append('.')
 from MSTest import Minesweeper
 
