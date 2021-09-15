@@ -153,7 +153,7 @@ class Minesweeper:
             for j in range(rowEnd):
                 msBoard[i].append('')
         return msBoard
-
+    
     def genBombs(self, diffBombNum, colEnd, rowEnd):
         end = diffBombNum
         bombList = []
@@ -220,11 +220,19 @@ class Minesweeper:
         return self.diff
 
     #Modifiers
-    def setBombs():
+    def setBombs(): 
         self.bombs = self.genBombs(self.diff)
 
     def setDiff(diff):
         self.diff = diff
+
+    def setBlankBoard():
+        self.blankBoard = self.generateBlankBoard(self.colEnd, self.rowEnd)
+
+    def newFullBoard(self):
+        self.fullBoard = self.inputNums(self.inputBombs(self.generateBlankBoard(self.colEnd, self.rowEnd), self.genBombs(self.diffBombNum, self.colEnd, self.rowEnd)))
+        print(self.fullBoard)
+        
 '''  
 #Testing Class Objects and Stuff
 
