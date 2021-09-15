@@ -7,16 +7,14 @@ from MSTest import Minesweeper
 
 def test(board, button, buttons, y, x):
     #print(buttonList)
-    board.newFullBoard()
-    print(board.fullBoard)
     
     if countDisabled(buttons) == 0:
-        print('hit')
-        '''if board.fullBoard[y][x] != 0:
+        #print('hit')
+        if board.fullBoard[y][x] != 0:
             while board.fullBoard[y][x] != 0:
                 board.newFullBoard()
                 if board.fullBoard[y][x] == 0:
-                    break'''
+                    break
     if board.fullBoard[y][x] == 'B':
         button.config(state = 'disabled', bg = 'red', text = str(board.fullBoard[y][x]))
     elif board.fullBoard[y][x] == 0:
@@ -31,7 +29,7 @@ def countDisabled(buttons):
     for i in range(len(buttons)):
         for j in range(len(buttons[i])):
             if buttons[i][j].cget('state') == 'disabled':
-                numDisabled += 0
+                numDisabled += 1
     return numDisabled
 
 

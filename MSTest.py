@@ -231,9 +231,9 @@ class Minesweeper:
 
     def newFullBoard(self):
         self.fullBoard = self.inputNums(self.inputBombs(self.generateBlankBoard(self.colEnd, self.rowEnd), self.genBombs(self.diffBombNum, self.colEnd, self.rowEnd)))
-        print(self.fullBoard)
+        #print(self.fullBoard)
         
-
+'''
 #Testing Class Objects and Stuff
 
 test = Minesweeper('Easy')
@@ -241,3 +241,4 @@ test = Minesweeper('Easy')
 print('test: ' + str(test.fullBoard))
 print('test2: ')
 test.newFullBoard()
+'''
