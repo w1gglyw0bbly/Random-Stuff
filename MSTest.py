@@ -47,91 +47,91 @@ class Minesweeper:
     def inputNums(self, boardWBombs):
         for i in range(len(boardWBombs)):
             for j in range(len(boardWBombs[i])):
-                boardWBombs[i][j] = self.checkNumber(i, j, boardWBombs)
+                boardWBombs[i][j] = self.checkNumber(i, j, boardWBombs, 'B')
         fullBoard = boardWBombs
         return fullBoard
     
-    def checkUL(self, y, x, boardWBombs):
+    def checkUL(self, y, x, boardWBombs, text):
         if y - 1 < 0 or x - 1 < 0:
             return False
-        elif boardWBombs[y - 1][9 + (x - 9) - 1] == 'B':
+        elif boardWBombs[y - 1][9 + (x - 9) - 1] == text:
             return True
         return False
 
-    def checkU(self, y, x, boardWBombs):
+    def checkU(self, y, x, boardWBombs, text):
         if y - 1 < 0:
             return False
-        elif boardWBombs[y - 1][9 + (x - 9)] == 'B':
+        elif boardWBombs[y - 1][9 + (x - 9)] == text:
             return True
         return False
 
-    def checkUR(self, y, x, boardWBombs):
+    def checkUR(self, y, x, boardWBombs, text):
         if y - 1 < 0 or x + 1 > self.rowEnd - 1:
             return False
-        elif boardWBombs[y - 1][9 + (x - 9) + 1] == 'B':
+        elif boardWBombs[y - 1][9 + (x - 9) + 1] == text:
             return True
         return False
 
-    def checkR(self, y, x, boardWBombs):
+    def checkR(self, y, x, boardWBombs, text):
         if x + 1 > self.rowEnd - 1:
             return False
-        elif boardWBombs[y][x + 1] == 'B':
+        elif boardWBombs[y][x + 1] == text:
             return True
         return False
 
-    def checkBR(self, y, x, boardWBombs):
+    def checkBR(self, y, x, boardWBombs, text):
         if y + 1 > 7 or x + 1 > self.rowEnd - 1:
             return False
-        elif boardWBombs[y + 1][9 - (9 - x) + 1] == 'B':
+        elif boardWBombs[y + 1][9 - (9 - x) + 1] == text:
             return True
         return False
 
-    def checkB(self, y, x, boardWBombs):
+    def checkB(self, y, x, boardWBombs, text):
         if y + 1 > 7:
             return False
-        elif boardWBombs[y + 1][9 - (9 - x)] == 'B':
+        elif boardWBombs[y + 1][9 - (9 - x)] == text:
             return True
         return False
 
-    def checkBL(self, y, x, boardWBombs):
+    def checkBL(self, y, x, boardWBombs, text):
         if y + 1 > 7 or x - 1 < 0:
             return False
-        elif boardWBombs[y + 1][9 - (9 - x) - 1] == 'B':
+        elif boardWBombs[y + 1][9 - (9 - x) - 1] == text:
             return True
         return False      
 
-    def checkL(self, y, x, boardWBombs):
+    def checkL(self, y, x, boardWBombs, text):
         if x - 1 < 0:
             return False
-        elif boardWBombs[y][x - 1] == 'B':
+        elif boardWBombs[y][x - 1] == text:
             return True
         return False
 
-    def checkS(self, y, x, boardWBombs):
-        if boardWBombs[y][x] == 'B':
+    def checkS(self, y, x, boardWBombs, text):
+        if boardWBombs[y][x] == text:
             return True
         return False
 
-    def checkNumber(self, y, x, boardWBombs):
+    def checkNumber(self, y, x, boardWBombs, text):
         bombs = 0
         
-        if self.checkS(y, x, boardWBombs) == True:
-            return 'B'
-        if self.checkUL(y, x, boardWBombs) == True:
+        if self.checkS(y, x, boardWBombs, text) == True:
+            return text
+        if self.checkUL(y, x, boardWBombs, text) == True:
             bombs += 1
-        if self.checkU(y, x, boardWBombs) == True:
+        if self.checkU(y, x, boardWBombs, text) == True:
             bombs += 1
-        if self.checkUR(y, x, boardWBombs) == True:
+        if self.checkUR(y, x, boardWBombs, text) == True:
             bombs += 1
-        if self.checkR(y, x, boardWBombs) == True:
+        if self.checkR(y, x, boardWBombs, text) == True:
             bombs += 1
-        if self.checkBR(y, x, boardWBombs) == True:
+        if self.checkBR(y, x, boardWBombs, text) == True:
             bombs += 1
-        if self.checkB(y, x, boardWBombs) == True:
+        if self.checkB(y, x, boardWBombs, text) == True:
             bombs += 1
-        if self.checkBL(y, x, boardWBombs) == True:
+        if self.checkBL(y, x, boardWBombs, text) == True:
             bombs += 1
-        if self.checkL(y, x, boardWBombs) == True:
+        if self.checkL(y, x, boardWBombs, text) == True:
             bombs += 1
 
         return bombs
