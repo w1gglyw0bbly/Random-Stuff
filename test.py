@@ -112,7 +112,7 @@ def checkSurrounding(buttons, y, x):
     else:
         buttonClicked(buttons[y + 1][9 - (9 - x) - 1], y + 1, 9 - (9 - x) - 1)
         if buttons[y + 1][9 - (9 - x) - 1].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y + 1, 9 + (9 - x) - 1)
+            checkSurrounding(buttons, y + 1, 9 - (9 - x) - 1)
     #L
     if x - 1 < 0:
         dump += 1
