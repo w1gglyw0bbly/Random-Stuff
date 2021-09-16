@@ -219,6 +219,9 @@ class Minesweeper:
     def getDiff():
         return self.diff
 
+    def getRowEnd(self):
+        return self.rowEnd
+
     #Modifiers
     def setBombs(): 
         self.bombs = self.genBombs(self.diff)
