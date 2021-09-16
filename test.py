@@ -51,11 +51,8 @@ def checkSurrounding(buttons, y, x):
     if y - 1 < 0 or x - 1 < 0:
         dump += 1
     elif buttons[y - 1][9 + (x - 9) - 1].cget('state') == 'disabled':
-        print(board.getRowEnd())
-        #print('hit UL y: ' + str(y) + ' x: ' + str(x))
         dump += 1
     else:
-        print('hit UL y: ' + str(y) + ' x: ' + str(x))
         buttonClicked(buttons[y - 1][9 + (x - 9) - 1], y - 1, 9 + (x - 9) - 1)
         if buttons[y - 1][9 + (x - 9) - 1].cget('bg') == 'light grey':
             checkSurrounding(buttons, y - 1, 9 + (x - 9) - 1) 
