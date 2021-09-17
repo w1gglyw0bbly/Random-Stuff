@@ -166,9 +166,6 @@ frame.grid()
 
 photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
-photo2 = tk.PhotoImage(file = 'squam.png')
-photo2 = photo2.zoom(2)
-
 
 board = Minesweeper('Easy')
 
