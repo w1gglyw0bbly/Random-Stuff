@@ -162,7 +162,6 @@ def flagSquare(event, buttons):
 top = tk.Tk()
 frame = tk.Frame(top)
 top.title('Minesweeper')
-canvas = tk.Canvas()
 frame.grid()
 
 photo = tk.PhotoImage(file = 'check.png')
