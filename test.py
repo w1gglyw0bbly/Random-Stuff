@@ -31,7 +31,7 @@ def test(board, button, buttons, y, x):
                 else:
                     buttonClicked(buttons[i][j], i, j)
     if output == '0':
-        checkSurrounding(buttons, y, x)
+        checkSurrounding(buttons, y, x, board.getRowEnd(), board.getColEnd())
 
 def buttonClicked(button, y, x):
     if board.fullBoard[y][x] == 'B':
@@ -58,72 +58,72 @@ def countDisabled(buttons):
                 numDisabled += 1
     return numDisabled
 
-def checkSurrounding(buttons, y, x):
+def checkSurrounding(buttons, y, x, rowEnd, colEnd):
     dump = 0
     
     #UL
     if y - 1 < 0 or x - 1 < 0:
         dump += 1
-    elif buttons[y - 1][9 + (x - 9) - 1].cget('state') == 'disabled':
+    elif buttons[y - 1][rowEnd + (x - rowEnd) - 1].cget('state') == 'disabled':
         dump += 1
     else:
-        buttonClicked(buttons[y - 1][9 + (x - 9) - 1], y - 1, 9 + (x - 9) - 1)
-        if buttons[y - 1][9 + (x - 9) - 1].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y - 1, 9 + (x - 9) - 1) 
+        buttonClicked(buttons[y - 1][rowEnd + (x - rowEnd) - 1], y - 1, rowEnd + (x - rowEnd) - 1)
+        if buttons[y - 1][rowEnd + (x - rowEnd) - 1].cget('bg') == 'light grey':
+            checkSurrounding(buttons, y - 1, rowEnd + (x - rowEnd) - 1, rowEnd, colEnd) 
     #U
     if y - 1 < 0:
         dump += 1
-    elif buttons[y - 1][9 + (x - 9)].cget('state') == 'disabled':
+    elif buttons[y - 1][rowEnd + (x - rowEnd)].cget('state') == 'disabled':
         dump += 1
     else:
-        buttonClicked(buttons[y - 1][9 + (x - 9)], y - 1, 9 + (x - 9))
-        if buttons[y - 1][9 + (x - 9)].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y - 1, 9 + (x - 9)) 
+        buttonClicked(buttons[y - 1][rowEnd + (x - rowEnd)], y - 1, rowEnd + (x - rowEnd))
+        if buttons[y - 1][rowEnd + (x - rowEnd)].cget('bg') == 'light grey':
+            checkSurrounding(buttons, y - 1, rowEnd + (x - rowEnd), rowEnd, colEnd) 
     #UR
     if y - 1 < 0 or x + 1 > board.getRowEnd():
         dump += 1
-    elif buttons[y - 1][9 + (x - 9) + 1].cget('state') == 'disabled':
+    elif buttons[y - 1][rowEnd + (x - rowEnd) + 1].cget('state') == 'disabled':
         dump += 1
     else:
-        buttonClicked(buttons[y - 1][9 + (x - 9) + 1], y - 1, 9 + (x - 9) + 1)
-        if buttons[y - 1][9 + (x - 9) + 1].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y - 1, 9 + (x - 9) + 1) 
+        buttonClicked(buttons[y - 1][rowEnd + (x - rowEnd) + 1], y - 1, rowEnd + (x - rowEnd) + 1)
+        if buttons[y - 1][rowEnd + (x - rowEnd) + 1].cget('bg') == 'light grey':
+            checkSurrounding(buttons, y - 1, rowEnd + (x - rowEnd) + 1, rowEnd, colEnd) 
     #R
-    if x + 1 >= board.getRowEnd():
+    if x + 1 > board.getRowEnd():
         dump += 1
     elif buttons[y][x + 1].cget('state') == 'disabled':
         dump += 1
     else:
         buttonClicked(buttons[y][x + 1], y, x + 1)
         if buttons[y][x + 1].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y, x + 1) 
+            checkSurrounding(buttons, y, x + 1, rowEnd, colEnd) 
     #BR
-    if y + 1 > 7 or x + 1 > board.getRowEnd():
+    if y + 1 > colEnd or x + 1 > board.getRowEnd():
         dump += 1
-    elif buttons[y + 1][9 - (9 - x) + 1].cget('state') == 'disabled':
+    elif buttons[y + 1][rowEnd - (rowEnd - x) + 1].cget('state') == 'disabled':
         dump += 1
     else:
-        buttonClicked(buttons[y + 1][9 - (9 - x) + 1], y + 1, 9 - (9 - x) + 1)
-        if buttons[y + 1][9 - (9 - x) + 1].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y + 1, 9 - (9 - x) + 1) 
+        buttonClicked(buttons[y + 1][rowEnd - (rowEnd - x) + 1], y + 1, rowEnd - (rowEnd - x) + 1)
+        if buttons[y + 1][rowEnd - (rowEnd - x) + 1].cget('bg') == 'light grey':
+            checkSurrounding(buttons, y + 1, rowEnd - (rowEnd - x) + 1, rowEnd, colEnd) 
     #B
-    if y + 1 > 7:
+    if y + 1 > colEnd:
         dump += 1
-    elif buttons[y + 1][9 - (9 - x)].cget('state') == 'disabled':
+    elif buttons[y + 1][rowEnd - (rowEnd - x)].cget('state') == 'disabled':
         dump += 1
     else:
-        buttonClicked(buttons[y + 1][9 - (9 - x)], y + 1, 9 - (9 - x))
-        if buttons[y + 1][9 - (9 - x)].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y + 1, 9 - (9 - x))
+        buttonClicked(buttons[y + 1][rowEnd - (rowEnd - x)], y + 1, rowEnd - (rowEnd - x))
+        if buttons[y + 1][rowEnd - (rowEnd - x)].cget('bg') == 'light grey':
+            checkSurrounding(buttons, y + 1, rowEnd - (rowEnd - x), rowEnd, colEnd)
     #BL
-    if y + 1 > 7 or x - 1 < 0:
+    if y + 1 > colEnd or x - 1 < 0:
         dump += 1
-    elif buttons[y + 1][9 - (9 - x) - 1].cget('state') == 'disabled':
+    elif buttons[y + 1][rowEnd - (rowEnd - x) - 1].cget('state') == 'disabled':
         dump += 1
     else:
-        buttonClicked(buttons[y + 1][9 - (9 - x) - 1], y + 1, 9 - (9 - x) - 1)
-        if buttons[y + 1][9 - (9 - x) - 1].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y + 1, 9 - (9 - x) - 1)
+        buttonClicked(buttons[y + 1][rowEnd - (rowEnd - x) - 1], y + 1, rowEnd - (rowEnd - x) - 1)
+        if buttons[y + 1][rowEnd - (rowEnd - x) - 1].cget('bg') == 'light grey':
+            checkSurrounding(buttons, y + 1, rowEnd - (rowEnd - x) - 1, rowEnd, colEnd)
     #L
     if x - 1 < 0:
         dump += 1
@@ -132,7 +132,7 @@ def checkSurrounding(buttons, y, x):
     else:
         buttonClicked(buttons[y][x - 1], y, x - 1)
         if buttons[y][x -1].cget('bg') == 'light grey':
-            checkSurrounding(buttons, y, x - 1) 
+            checkSurrounding(buttons, y, x - 1, rowEnd, colEnd) 
 
 def flagSquare(event, buttons):
     dump = 0
@@ -167,12 +167,12 @@ frame.grid()
 photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
 
-board = Minesweeper('Easy')
+board = Minesweeper('Medium')
 
 buttonList = []
-for i in range(8):
+for i in range(board.getColEnd() + 1):
     buttonRow = []
-    for j in range(10):
+    for j in range(board.getRowEnd() + 1):
         b = tk.Button(top, width = 5, height = 2)
         buttonRow.append(b)
         b.config(command = partial(test, board, b, buttonList, i, j))

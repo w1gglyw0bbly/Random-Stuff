@@ -52,27 +52,31 @@ class Minesweeper:
         return fullBoard
     
     def checkUL(self, y, x, boardWBombs, text):
+        #print('UL')
         if y - 1 < 0 or x - 1 < 0:
             return False
-        elif boardWBombs[y - 1][9 + (x - 9) - 1] == text:
+        elif boardWBombs[y - 1][self.rowEnd + (x - self.rowEnd) - 1] == text:
             return True
         return False
 
     def checkU(self, y, x, boardWBombs, text):
+        #print('U')
         if y - 1 < 0:
             return False
-        elif boardWBombs[y - 1][9 + (x - 9)] == text:
+        elif boardWBombs[y - 1][self.rowEnd + (x - self.rowEnd)] == text:
             return True
         return False
 
     def checkUR(self, y, x, boardWBombs, text):
+        #print('UR')
         if y - 1 < 0 or x + 1 > self.rowEnd:
             return False
-        elif boardWBombs[y - 1][9 + (x - 9) + 1] == text:
+        elif boardWBombs[y - 1][self.rowEnd + (x - self.rowEnd) + 1] == text:
             return True
         return False
 
     def checkR(self, y, x, boardWBombs, text):
+        #print('R')
         if x + 1 > self.rowEnd:
             return False
         elif boardWBombs[y][x + 1] == text:
@@ -80,27 +84,31 @@ class Minesweeper:
         return False
 
     def checkBR(self, y, x, boardWBombs, text):
-        if y + 1 > 7 or x + 1 > self.rowEnd:
+        #print('BR')
+        if y + 1 > self.colEnd or x + 1 > self.rowEnd:
             return False
-        elif boardWBombs[y + 1][9 - (9 - x) + 1] == text:
+        elif boardWBombs[y + 1][self.rowEnd - (self.rowEnd - x) + 1] == text:
             return True
         return False
 
     def checkB(self, y, x, boardWBombs, text):
-        if y + 1 > 7:
+        #print('B')
+        if y + 1 > self.colEnd:
             return False
-        elif boardWBombs[y + 1][9 - (9 - x)] == text:
+        elif boardWBombs[y + 1][self.rowEnd - (self.rowEnd - x)] == text:
             return True
         return False
 
     def checkBL(self, y, x, boardWBombs, text):
-        if y + 1 > 7 or x - 1 < 0:
+        #print('BL')
+        if y + 1 > self.colEnd or x - 1 < 0:
             return False
-        elif boardWBombs[y + 1][9 - (9 - x) - 1] == text:
+        elif boardWBombs[y + 1][self.rowEnd - (self.rowEnd - x) - 1] == text:
             return True
         return False      
 
     def checkL(self, y, x, boardWBombs, text):
+        #print('L')
         if x - 1 < 0:
             return False
         elif boardWBombs[y][x - 1] == text:
@@ -219,6 +227,9 @@ class Minesweeper:
     def getDiff():
         return self.diff
 
+    def getColEnd(self):
+        return self.colEnd
+    
     def getRowEnd(self):
         return self.rowEnd
 
