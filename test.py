@@ -16,7 +16,20 @@ def test(board, button, buttons, y, x):
                 board.newFullBoard()
                 if board.fullBoard[y][x] == 0:
                     break
+
     output = buttonClicked(button, y, x)
+    numBombs = 0
+    for i in range(len(buttons)):
+        for j in range(len(buttons[i])):
+            if buttons[i][j].cget('text') == 'B' or board.fullBoard[i][j] == 'B':
+                numBombs += 1
+    if output == 'B':
+        for i in range(len(buttons)):
+            for j in range(len(buttons[i])):
+                if buttons[i][j].cget('state') == 'disabled':
+                    continue
+                else:
+                    buttonClicked(buttons[i][j], i, j)
     if output == '0':
         checkSurrounding(buttons, y, x)
 
