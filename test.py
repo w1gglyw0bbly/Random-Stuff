@@ -141,7 +141,7 @@ def flagSquare(event, buttons):
     elif buttons[y][x].cget('text') == 'F':
         buttons[y][x].config(text = '', fg = 'black', bg = 'SystemButtonFace')
     else:
-        print('hit')
+        #print('hit')
         buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow')
 
 top = tk.Tk()
