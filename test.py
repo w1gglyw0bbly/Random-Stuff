@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter.ttk import *
 import sys
 from functools import partial
  
@@ -119,11 +120,31 @@ def checkSurrounding(buttons, y, x):
         buttonClicked(buttons[y][x - 1], y, x - 1)
         if buttons[y][x -1].cget('bg') == 'light grey':
             checkSurrounding(buttons, y, x - 1) 
-        
-        
+
+def flagSquare(event, button):
+    dump = 0
+    x = top.winfo_pointerx() - top.winfo_rootx()
+    y = top.winfo_pointery() - top.winfo_rooty()
+    string = ('x = ' + str(x) + ' y = ' + str(y))
+    print(string)
+    #40, 45
+    if button.cget('state') == 'disabled':
+        dump += 1
+    else:
+        button.config(text = 'F')
+
+
 top = tk.Tk()
 frame = tk.Frame(top)
+canvas = tk.Canvas()
 frame.grid()
+
+
+photo = tk.PhotoImage(file = 'check.png')
+photo = photo.zoom(2)
+photo2 = tk.PhotoImage(file = 'squam.png')
+photo2 = photo2.zoom(2)
+
 
 board = Minesweeper('Easy')
 
@@ -132,6 +153,8 @@ for i in range(8):
     buttonRow = []
     for j in range(10):
         b = tk.Button(top, width = 5, height = 2)
+        b.bind('<Button-2>', lambda x: flagSquare(x, b))
+        b.bind('<Button-3>', lambda x: flagSquare(x, b))
         buttonRow.append(b)
         b.config(command = partial(test, board, b, buttonList, i, j))
         b.grid(row = i, column = j)
