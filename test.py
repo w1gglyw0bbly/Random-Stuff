@@ -24,7 +24,7 @@ def buttonClicked(button, y, x):
     if board.fullBoard[y][x] == 'B':
         button.config(state = 'disabled', bg = 'red', text = str(board.fullBoard[y][x]))
     elif board.fullBoard[y][x] == 0:
-        button.config(state = 'disabled', bg = 'light grey')
+        button.config(state = 'disabled', bg = 'light grey', text = '')
     elif board.fullBoard[y][x] == 1:
         button.config(state = 'disabled', bg = 'light green', text = str(board.fullBoard[y][x]))
     elif board.fullBoard[y][x] == 2:
@@ -121,18 +121,28 @@ def checkSurrounding(buttons, y, x):
         if buttons[y][x -1].cget('bg') == 'light grey':
             checkSurrounding(buttons, y, x - 1) 
 
-def flagSquare(event, button):
+def flagSquare(event, buttons):
     dump = 0
-    x = top.winfo_pointerx() - top.winfo_rootx()
-    y = top.winfo_pointery() - top.winfo_rooty()
-    string = ('x = ' + str(x) + ' y = ' + str(y))
-    print(string)
-    #40, 45
-    if button.cget('state') == 'disabled':
-        dump += 1
-    else:
-        button.config(text = 'F')
+    x = int((top.winfo_pointerx() - top.winfo_rootx()) / 45)
+    y = int((top.winfo_pointery() - top.winfo_rooty()) / 40)
+    #string = ('x = ' + str(x) + ' y = ' + str(y))
+    #print(string)
 
+
+
+    '''
+    for i in range(0, 320, 40):
+        for j in range(0, 450, 45):
+      '''      
+            
+    #40, 45
+    if buttons[y][x].cget('state') == 'disabled':
+        dump += 1
+    elif buttons[y][x].cget('text') == 'F':
+        buttons[y][x].config(text = '', fg = 'black', bg = 'SystemButtonFace')
+    else:
+        print('hit')
+        buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow')
 
 top = tk.Tk()
 frame = tk.Frame(top)
@@ -153,11 +163,11 @@ for i in range(8):
     buttonRow = []
     for j in range(10):
         b = tk.Button(top, width = 5, height = 2)
-        b.bind('<Button-2>', lambda x: flagSquare(x, b))
-        b.bind('<Button-3>', lambda x: flagSquare(x, b))
         buttonRow.append(b)
         b.config(command = partial(test, board, b, buttonList, i, j))
         b.grid(row = i, column = j)
+        top.bind('<Button-2>', lambda x: flagSquare(x, buttonList))
+        top.bind('<Button-3>', lambda x: flagSquare(x, buttonList))
     buttonList.append(buttonRow)
 
  
