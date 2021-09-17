@@ -66,21 +66,21 @@ class Minesweeper:
         return False
 
     def checkUR(self, y, x, boardWBombs, text):
-        if y - 1 < 0 or x + 1 > self.rowEnd - 1:
+        if y - 1 < 0 or x + 1 > self.rowEnd:
             return False
         elif boardWBombs[y - 1][9 + (x - 9) + 1] == text:
             return True
         return False
 
     def checkR(self, y, x, boardWBombs, text):
-        if x + 1 > self.rowEnd - 1:
+        if x + 1 > self.rowEnd:
             return False
         elif boardWBombs[y][x + 1] == text:
             return True
         return False
 
     def checkBR(self, y, x, boardWBombs, text):
-        if y + 1 > 7 or x + 1 > self.rowEnd - 1:
+        if y + 1 > 7 or x + 1 > self.rowEnd:
             return False
         elif boardWBombs[y + 1][9 - (9 - x) + 1] == text:
             return True
@@ -147,10 +147,10 @@ class Minesweeper:
 
     def generateBlankBoard(self, colEnd, rowEnd):
         msBoard = []
-        for i in range(colEnd):
+        for i in range(colEnd + 1):
             msBoard.append([])
-        for i in range(colEnd):
-            for j in range(rowEnd):
+        for i in range(colEnd + 1):
+            for j in range(rowEnd + 1):
                 msBoard[i].append('')
         return msBoard
     
@@ -159,7 +159,7 @@ class Minesweeper:
         bombList = []
         for i in range(end):
             while 1 == 1:
-                bomb = [random.randint(0, colEnd - 1), random.randint(0, rowEnd - 1)]
+                bomb = [random.randint(0, colEnd), random.randint(0, rowEnd)]
                 if inList(bombList, bomb) == False:
                     bombList.append(bomb)
                     break
@@ -183,7 +183,7 @@ class Minesweeper:
             end = 20
         else:
             print('This is not a valid difficulty')
-        return end
+        return end - 1
 
     def makeRowLen(self, diff):
         end = 0
@@ -196,7 +196,7 @@ class Minesweeper:
             end = 24
         else:
             print('This is not a valid difficulty')
-        return end
+        return end - 1
     
     def makeDiffNum(self, diff):
         end = 0

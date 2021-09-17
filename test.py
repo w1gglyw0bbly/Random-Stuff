@@ -80,7 +80,7 @@ def checkSurrounding(buttons, y, x):
         if buttons[y - 1][9 + (x - 9)].cget('bg') == 'light grey':
             checkSurrounding(buttons, y - 1, 9 + (x - 9)) 
     #UR
-    if y - 1 < 0 or x + 1 > board.getRowEnd() - 1:
+    if y - 1 < 0 or x + 1 > board.getRowEnd():
         dump += 1
     elif buttons[y - 1][9 + (x - 9) + 1].cget('state') == 'disabled':
         dump += 1
@@ -98,7 +98,7 @@ def checkSurrounding(buttons, y, x):
         if buttons[y][x + 1].cget('bg') == 'light grey':
             checkSurrounding(buttons, y, x + 1) 
     #BR
-    if y + 1 > 7 or x + 1 > board.getRowEnd() - 1:
+    if y + 1 > 7 or x + 1 > board.getRowEnd():
         dump += 1
     elif buttons[y + 1][9 - (9 - x) + 1].cget('state') == 'disabled':
         dump += 1
