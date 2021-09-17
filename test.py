@@ -144,11 +144,12 @@ def flagSquare(event, buttons):
         #print('hit')
         buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow')
 
+
+
 top = tk.Tk()
 frame = tk.Frame(top)
 canvas = tk.Canvas()
 frame.grid()
-
 
 photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
