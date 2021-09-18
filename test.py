@@ -141,7 +141,7 @@ def checkSurrounding(buttons, y, x, rowEnd, colEnd):
 def flagSquare(event, buttons):
     dump = 0
     x = int((top.winfo_pointerx() - top.winfo_rootx()) / 45)
-    y = int(((top.winfo_pointery() - top.winfo_rooty()) / 40) - 0.5)
+    y = int(((top.winfo_pointery() - top.winfo_rooty()) / 40) - 0.7)
     #print(y)
     #string = ('x = ' + str(top.winfo_pointerx() - top.winfo_rootx()) + ' y = ' + str(top.winfo_pointery() - top.winfo_rooty()))
     #string = ('x = ' + str(x) + ' y = ' + str(y))
@@ -152,7 +152,7 @@ def flagSquare(event, buttons):
     '''
     for i in range(0, 320, 40):
         for j in range(0, 450, 45):
-      '''      
+    '''      
             
     #40, 45
     if buttons[y][x].cget('state') == 'disabled':
@@ -160,6 +160,7 @@ def flagSquare(event, buttons):
     elif (top.winfo_pointery() - top.winfo_rooty()) / 40 <= 0.5:
         #print('hit')
         dump += 1
+        w.config(bg = 'yellow')
     elif buttons[y][x].cget('text') == 'F':
         buttons[y][x].config(text = '', fg = 'black', bg = 'SystemButtonFace')
     else:
@@ -167,20 +168,49 @@ def flagSquare(event, buttons):
         #print((top.winfo_pointery() - top.winfo_rooty()) / 40)
         buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow')
 
-
+def setDifficulty(checkBox, board):
+    if checkBox.cget('text') == 'Easy':
+        print('hit')
+        board.setDiff('Easy')
+    elif checkBox.cget('text') == 'Medium':
+        print('hit')
+        board.setDiff('Medium')
+    elif checkBox.cget('text') == 'Hard':
+        print('hit')
+        board.setDiff('Hard')
+    else:
+        return 'bruh'
+    return board
 
 top = tk.Tk()
 frame = tk.Frame(top)
 top.title('Minesweeper')
 frame.grid()
-w = Label(top, text = 'test')
-w.grid(row = 0, column = 0, columnspan = 11)
-top.update()
+w = tk.Label(top, text = 'Fuck You')
+w.grid(row = 0, column = 0, columnspan = 5)
+
+
+board = Minesweeper()
+
+#making Easy check box
+checkEasy = tk.Checkbutton(top, text = 'Easy')
+checkEasy.config(command = partial(setDifficulty, checkEasy, board))
+checkEasy.grid(row = 0, column = 6, columnspan = 2)
+
+#making Medium check box
+checkMedium = tk.Checkbutton(top, text = 'Medium')
+checkMedium.config(command = partial(setDifficulty, checkMedium, board))
+checkMedium.grid(row = 0, column = 7, columnspan = 3)
+
+#making Hard check box
+checkHard = tk.Checkbutton(top, text = 'Hard')
+checkHard.config(command = partial(setDifficulty, checkHard, board))
+checkHard.grid(row = 0, column = 9, columnspan = 3)
 
 photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
 
-board = Minesweeper('Easy')
+
 
 buttonList = []
 for i in range(board.getColEnd() + 1):
