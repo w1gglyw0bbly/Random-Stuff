@@ -141,7 +141,9 @@ def checkSurrounding(buttons, y, x, rowEnd, colEnd):
 def flagSquare(event, buttons):
     dump = 0
     x = int((top.winfo_pointerx() - top.winfo_rootx()) / 45)
-    y = int((top.winfo_pointery() - top.winfo_rooty()) / 40)
+    y = int(((top.winfo_pointery() - top.winfo_rooty()) / 40) - 0.5)
+    #print(y)
+    #string = ('x = ' + str(top.winfo_pointerx() - top.winfo_rootx()) + ' y = ' + str(top.winfo_pointery() - top.winfo_rooty()))
     #string = ('x = ' + str(x) + ' y = ' + str(y))
     #print(string)
 
@@ -155,10 +157,14 @@ def flagSquare(event, buttons):
     #40, 45
     if buttons[y][x].cget('state') == 'disabled':
         dump += 1
+    elif (top.winfo_pointery() - top.winfo_rooty()) / 40 <= 0.5:
+        #print('hit')
+        dump += 1
     elif buttons[y][x].cget('text') == 'F':
         buttons[y][x].config(text = '', fg = 'black', bg = 'SystemButtonFace')
     else:
         #print('hit')
+        #print((top.winfo_pointery() - top.winfo_rooty()) / 40)
         buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow')
 
 
@@ -167,6 +173,9 @@ top = tk.Tk()
 frame = tk.Frame(top)
 top.title('Minesweeper')
 frame.grid()
+w = Label(top, text = 'test')
+w.grid(row = 0, column = 0, columnspan = 11)
+top.update()
 
 photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
@@ -180,7 +189,7 @@ for i in range(board.getColEnd() + 1):
         b = tk.Button(top, width = 5, height = 2)
         buttonRow.append(b)
         b.config(command = partial(test, board, b, buttonList, i, j))
-        b.grid(row = i, column = j)
+        b.grid(row = i + 1, column = j + 1)
         top.bind('<Button-2>', lambda x: flagSquare(x, buttonList))
         top.bind('<Button-3>', lambda x: flagSquare(x, buttonList))
     buttonList.append(buttonRow)
