@@ -8,7 +8,8 @@ from MSTest import Minesweeper
 
 def test(board, button, buttons, y, x):
     #print(buttonList)
-    
+
+    #Ensures that you start the game on a blank space so you cannot fail immediately
     if countDisabled(buttons) == 0:
         #print('hit')
         if board.fullBoard[y][x] != 0:
@@ -18,11 +19,13 @@ def test(board, button, buttons, y, x):
                     break
 
     output = buttonClicked(button, y, x)
+    #counting number of bombs, probably unnecessary
     numBombs = 0
     for i in range(len(buttons)):
         for j in range(len(buttons[i])):
             if buttons[i][j].cget('text') == 'B' or board.fullBoard[i][j] == 'B':
                 numBombs += 1
+    #Reveals board if bomb is revealed, should change to just reveal all bombs
     if output == 'B':
         for i in range(len(buttons)):
             for j in range(len(buttons[i])):
@@ -30,6 +33,7 @@ def test(board, button, buttons, y, x):
                     continue
                 else:
                     buttonClicked(buttons[i][j], i, j)
+    #Reveals the surrounding of blank space and adjacents when revealed
     if output == '0':
         checkSurrounding(buttons, y, x, board.getRowEnd(), board.getColEnd())
 
@@ -167,7 +171,7 @@ frame.grid()
 photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
 
-board = Minesweeper('Medium')
+board = Minesweeper('Easy')
 
 buttonList = []
 for i in range(board.getColEnd() + 1):
