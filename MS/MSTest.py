@@ -232,6 +232,9 @@ class Minesweeper:
     
     def getRowEnd(self):
         return self.rowEnd
+    
+    def getDiffBombNum(self):
+        return self.diffBombNum
 
     #Modifiers
     def setBombs(): 

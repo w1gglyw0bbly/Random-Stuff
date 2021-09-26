@@ -3,12 +3,17 @@ from tkinter.ttk import *
 import sys
 from functools import partial
  
-sys.path.append('.')
+#sys.path.append('.')
 from MSTest import Minesweeper
+
+
+
 
 def test(board, button, buttons, y, x):
     #print(buttonList)
 
+    
+    
     #Ensures that you start the game on a blank space so you cannot fail immediately
     if countDisabled(buttons) == 0:
         #print('hit')
@@ -18,24 +23,28 @@ def test(board, button, buttons, y, x):
                 if board.fullBoard[y][x] == 0:
                     break
 
-    output = buttonClicked(button, y, x)
-    #counting number of bombs, probably unnecessary
+
+    '''
+    #counts number of bombs
     numBombs = 0
     for i in range(len(buttons)):
         for j in range(len(buttons[i])):
             if buttons[i][j].cget('text') == 'B' or board.fullBoard[i][j] == 'B':
                 numBombs += 1
+
+    #print(numBombs)
+    '''
+
+    output = buttonClicked(button, y, x)
     #Reveals board if bomb is revealed, should change to just reveal all bombs
-    if output == 'B':
-        for i in range(len(buttons)):
-            for j in range(len(buttons[i])):
-                if buttons[i][j].cget('state') == 'disabled':
-                    continue
-                else:
-                    buttonClicked(buttons[i][j], i, j)
+    endGame(output, buttons)
+
     #Reveals the surrounding of blank space and adjacents when revealed
     if output == '0':
         checkSurrounding(buttons, y, x, board.getRowEnd(), board.getColEnd())
+
+
+
 
 def buttonClicked(button, y, x):
     if board.fullBoard[y][x] == 'B':
@@ -53,6 +62,29 @@ def buttonClicked(button, y, x):
     else:
         button.config(state = 'disabled', text = str(board.fullBoard[y][x]))
     return str(board.fullBoard[y][x])
+
+def checkFlags(buttons, button, y, x):
+    #print('hit flags')
+    count = 0
+    for i in range(board.getColEnd() + 1):
+        for j in range(board.getRowEnd() + 1):
+            #print(str(buttons[i][j].cget('text')) + ' ' + str(board.fullBoard[i][j]))
+            if buttons[i][j].cget('text') == 'F' and board.fullBoard[i][j] == 'B':
+                count += 1
+    #print(count)
+    if count == board.getDiffBombNum():
+        #print('hit')
+        endGame('B', buttons)
+
+def endGame(output, buttons):
+    #Reveals board if bomb is revealed, should change to just reveal all bombs
+    if output == 'B':
+        for i in range(len(buttons)):
+            for j in range(len(buttons[i])):
+                if buttons[i][j].cget('state') == 'disabled':
+                    continue
+                else:
+                    buttonClicked(buttons[i][j], i, j)    
 
 def countDisabled(buttons):
     numDisabled = 0
@@ -147,8 +179,16 @@ def flagSquare(event, buttons):
     #string = ('x = ' + str(x) + ' y = ' + str(y))
     #print(string)
 
+    #counts number of bombs
+    numBombs = 0
+    for i in range(len(buttons)):
+        for j in range(len(buttons[i])):
+            if buttons[i][j].cget('text') == 'B' or board.fullBoard[i][j] == 'B':
+                numBombs += 1
 
+    #print(numBombs)
 
+    checkFlags(buttons, buttons[y][x], y, x)
     '''
     for i in range(0, 320, 40):
         for j in range(0, 450, 45):
