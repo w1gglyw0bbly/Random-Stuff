@@ -2,7 +2,8 @@ import tkinter as tk
 from tkinter.ttk import *
 import sys
 from functools import partial
- 
+import tkinter.messagebox
+
 #sys.path.append('.')
 from MSTest import Minesweeper
 
@@ -75,6 +76,7 @@ def checkFlags(buttons, button, y, x):
     if count == board.getDiffBombNum():
         #print('hit')
         endGame('B', buttons)
+        tk.messagebox.showinfo('Nice', 'Nice')
 
 def endGame(output, buttons):
     #Reveals board if bomb is revealed, should change to just reveal all bombs
@@ -212,12 +214,18 @@ def setDifficulty(checkBox, board):
     if checkBox.cget('text') == 'Easy':
         print('hit')
         board.setDiff('Easy')
+        checkMedium.deselect()
+        checkHard.deselect()
     elif checkBox.cget('text') == 'Medium':
         print('hit')
         board.setDiff('Medium')
+        checkEasy.deselect()
+        checkHard.deselect()
     elif checkBox.cget('text') == 'Hard':
         print('hit')
         board.setDiff('Hard')
+        checkEasy.deselect()
+        checkMedium.deselect()
     else:
         return 'bruh'
     return board
