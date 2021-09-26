@@ -1,0 +1,27 @@
+.clickImage {
+	animation-duration: 0.5s;
+	animation-name: bounce;
+}
+
+@keyframes bounce{
+	from {
+		width: 400;
+		height: 200%;
+	}
+	
+	to {
+		width: 420;
+		height: 220;
+	}
+}
+
+@keyframes bounce{
+	from {
+		width: 420;
+		height: 220;
+	}
+	to {
+		width: 400;
+		height: 200;
+	}
+}

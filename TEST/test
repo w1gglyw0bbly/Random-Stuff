@@ -1,0 +1,5 @@
+#clickImage {
+	animation-duration: 3s;
+	animation-name: bounce;
+	color: red;
+}
