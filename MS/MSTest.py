@@ -34,8 +34,8 @@ def inList(parentList, item):
 
 class Minesweeper:
 
-    def __init__(self):
-        self.diff = 'Easy'
+    def __init__(self, diff):
+        self.diff = diff
         self.colEnd = self.makeColLen(self.diff)
         self.rowEnd = self.makeRowLen(self.diff)
         self.diffBombNum = self.makeDiffNum(self.diff)
