@@ -13,7 +13,7 @@ from MSTest import Minesweeper
 def click(board, button, buttons, y, x):
     #print(buttonList)
 
-    checkWinCond(board, buttons, buttons[y][x], y, x)
+    #checkWinCond(board, buttons)
     
     #Ensures that you start the game on a blank space so you cannot fail immediately
     if countDisabled(buttons) == 0:
@@ -44,6 +44,8 @@ def click(board, button, buttons, y, x):
     if output == '0':
         checkSurrounding(board, buttons, y, x, board.getRowEnd(), board.getColEnd())
 
+    top.after(10, checkWinCond(board, buttons))
+
 
 
 
@@ -64,14 +66,17 @@ def buttonClicked(board, button, y, x):
         button.config(state = 'disabled', text = str(board.fullBoard[y][x]))
     return str(board.fullBoard[y][x])
 
-def checkWinCond(board, buttons, button, y, x):
+def checkWinCond(board, buttons):
     countChecked = 0
+    print('hit')
     for i in range(len(buttons)):
         for j in range(len(buttons[i])):
             if buttons[i][j].cget('state') == 'disabled':
                 countChecked += 1
-
+    print(countChecked)
+    
     if (board.getRowEnd() + 1) * (board.getColEnd() + 1) - len(board.getBombs()) == countChecked:
+        print('hit good')
         endGame(board, 'B', buttons)
         tk.messagebox.showinfo('Nice', 'Nice')
     
@@ -228,7 +233,7 @@ def clearBoard(buttonList):
 
 def setDifficulty(checkBox, board, buttonList):
     if checkBox.cget('text') == 'Easy':
-        print('hit')
+        #print('hit')
         boardNew = Minesweeper('Easy')
         #checkMedium.deselect()
         #checkHard.deselect()
@@ -236,7 +241,7 @@ def setDifficulty(checkBox, board, buttonList):
         buttonList.clear()
         start(buttonList, boardNew)
     elif checkBox.cget('text') == 'Medium':
-        print('hit')
+        #print('hit')
         boardNew = Minesweeper('Medium')
         '''checkEasy.deselect()
         checkHard.deselect()'''
@@ -244,7 +249,7 @@ def setDifficulty(checkBox, board, buttonList):
         buttonList.clear()
         start(buttonList, boardNew)
     elif checkBox.cget('text') == 'Hard':
-        print('hit')
+        #print('hit')
         boardNew = Minesweeper('Hard')
         '''checkEasy.deselect()
         checkMedium.deselect()'''
@@ -301,6 +306,6 @@ def start(buttonList, board):
         buttonList.append(buttonRow)
 
 start(buttonList, board)
- 
+
 top.mainloop()
 
