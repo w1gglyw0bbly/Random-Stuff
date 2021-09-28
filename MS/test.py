@@ -10,10 +10,10 @@ from MSTest import Minesweeper
 
 
 
-def test(board, button, buttons, y, x):
+def click(board, button, buttons, y, x):
     #print(buttonList)
 
-    
+    checkWinCond(board, buttons, buttons[y][x], y, x)
     
     #Ensures that you start the game on a blank space so you cannot fail immediately
     if countDisabled(buttons) == 0:
@@ -64,8 +64,18 @@ def buttonClicked(board, button, y, x):
         button.config(state = 'disabled', text = str(board.fullBoard[y][x]))
     return str(board.fullBoard[y][x])
 
-def checkFlags(board, buttons, button, y, x):
-    #print('hit flags')
+def checkWinCond(board, buttons, button, y, x):
+    countChecked = 0
+    for i in range(len(buttons)):
+        for j in range(len(buttons[i])):
+            if buttons[i][j].cget('state') == 'disabled':
+                countChecked += 1
+
+    if (board.getRowEnd() + 1) * (board.getColEnd() + 1) - len(board.getBombs()) == countChecked:
+        endGame(board, 'B', buttons)
+        tk.messagebox.showinfo('Nice', 'Nice')
+    
+    '''#print('hit flags')
     count = 0
     for i in range(board.getColEnd() + 1):
         for j in range(board.getRowEnd() + 1):
@@ -76,7 +86,7 @@ def checkFlags(board, buttons, button, y, x):
     if count == board.getDiffBombNum():
         #print('hit')
         endGame(board, 'B', buttons)
-        tk.messagebox.showinfo('Nice', 'Nice')
+        tk.messagebox.showinfo('Nice', 'Nice')'''
 
 def endGame(board, output, buttons):
     #Reveals board if bomb is revealed, should change to just reveal all bombs
@@ -190,7 +200,7 @@ def flagSquare(event, board, buttons):
 
     #print(numBombs)
 
-    checkFlags(board, buttons, buttons[y][x], y, x)
+    #checkWinCond(board, buttons, buttons[y][x], y, x)
     '''
     for i in range(0, 320, 40):
         for j in range(0, 450, 45):
@@ -220,24 +230,24 @@ def setDifficulty(checkBox, board, buttonList):
     if checkBox.cget('text') == 'Easy':
         print('hit')
         boardNew = Minesweeper('Easy')
-        checkMedium.deselect()
-        checkHard.deselect()
+        #checkMedium.deselect()
+        #checkHard.deselect()
         clearBoard(buttonList)
         buttonList.clear()
         start(buttonList, boardNew)
     elif checkBox.cget('text') == 'Medium':
         print('hit')
         boardNew = Minesweeper('Medium')
-        checkEasy.deselect()
-        checkHard.deselect()
+        '''checkEasy.deselect()
+        checkHard.deselect()'''
         clearBoard(buttonList)
         buttonList.clear()
         start(buttonList, boardNew)
     elif checkBox.cget('text') == 'Hard':
         print('hit')
         boardNew = Minesweeper('Hard')
-        checkEasy.deselect()
-        checkMedium.deselect()
+        '''checkEasy.deselect()
+        checkMedium.deselect()'''
         clearBoard(buttonList)
         buttonList.clear()
         start(buttonList, boardNew)
@@ -253,22 +263,22 @@ w = tk.Label(top, text = '...')
 w.grid(row = 0, column = 0, columnspan = 5)
 
 
-board = Minesweeper('Medium')
+board = Minesweeper('Easy')
 
 buttonList = []
 
-#making Easy check box
-checkEasy = tk.Checkbutton(top, text = 'Easy')
+#making Easy button
+checkEasy = tk.Button(top, text = 'Easy')
 checkEasy.config(command = partial(setDifficulty, checkEasy, board, buttonList))
 checkEasy.grid(row = 0, column = 6, columnspan = 2)
 
-#making Medium check box
-checkMedium = tk.Checkbutton(top, text = 'Medium')
+#making Medium button
+checkMedium = tk.Button(top, text = 'Medium')
 checkMedium.config(command = partial(setDifficulty, checkMedium, board, buttonList))
 checkMedium.grid(row = 0, column = 7, columnspan = 3)
 
-#making Hard check box
-checkHard = tk.Checkbutton(top, text = 'Hard')
+#making Hard button
+checkHard = tk.Button(top, text = 'Hard')
 checkHard.config(command = partial(setDifficulty, checkHard, board, buttonList))
 checkHard.grid(row = 0, column = 9, columnspan = 3)
 
@@ -284,7 +294,7 @@ def start(buttonList, board):
         for j in range(board.getRowEnd() + 1):
             b = tk.Button(top, width = 5, height = 2)
             buttonRow.append(b)
-            b.config(command = partial(test, board, b, buttonList, i, j))
+            b.config(command = partial(click, board, b, buttonList, i, j))
             b.grid(row = i + 1, column = j + 1)
             top.bind('<Button-2>', lambda x: flagSquare(x, board, buttonList))
             top.bind('<Button-3>', lambda x: flagSquare(x, board, buttonList))
