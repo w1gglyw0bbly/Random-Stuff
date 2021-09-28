@@ -64,7 +64,7 @@ def buttonClicked(board, button, y, x):
         button.config(state = 'disabled', text = str(board.fullBoard[y][x]))
     return str(board.fullBoard[y][x])
 
-def checkFlags(buttons, button, y, x):
+def checkFlags(board, buttons, button, y, x):
     #print('hit flags')
     count = 0
     for i in range(board.getColEnd() + 1):
