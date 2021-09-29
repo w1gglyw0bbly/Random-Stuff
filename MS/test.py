@@ -52,19 +52,19 @@ def click(board, button, buttons, y, x):
 
 def buttonClicked(board, button, y, x):
     if board.fullBoard[y][x] == 'B':
-        button.config(state = 'disabled', bg = 'red', text = str(board.fullBoard[y][x]))
+        button.config(state = 'disabled', bg = 'red', text = str(board.fullBoard[y][x]), image = '')
     elif board.fullBoard[y][x] == 0:
-        button.config(state = 'disabled', bg = 'light grey', text = '')
+        button.config(state = 'disabled', bg = 'light grey', text = '', image = '')
     elif board.fullBoard[y][x] == 1:
-        button.config(state = 'disabled', bg = 'light green', text = str(board.fullBoard[y][x]))
+        button.config(state = 'disabled', bg = 'light green', text = str(board.fullBoard[y][x]), image = '')
     elif board.fullBoard[y][x] == 2:
-        button.config(state = 'disabled', bg = 'pink', text = str(board.fullBoard[y][x]))
+        button.config(state = 'disabled', bg = 'pink', text = str(board.fullBoard[y][x]), image = '')
     elif board.fullBoard[y][x] == 3:
-        button.config(state = 'disabled', bg = 'light blue', text = str(board.fullBoard[y][x]))
+        button.config(state = 'disabled', bg = 'light blue', text = str(board.fullBoard[y][x]), image = '')
     elif board.fullBoard[y][x] == 4:
-        button.config(state = 'disabled', bg = 'purple', text = str(board.fullBoard[y][x]))     
+        button.config(state = 'disabled', bg = 'purple', text = str(board.fullBoard[y][x]), image = '')     
     else:
-        button.config(state = 'disabled', text = str(board.fullBoard[y][x]))
+        button.config(state = 'disabled', text = str(board.fullBoard[y][x]), image = '')
     return str(board.fullBoard[y][x])
 
 def checkWinCond(board, buttons):
@@ -220,11 +220,13 @@ def flagSquare(event, board, buttons):
         dump += 1
         w.config(bg = 'yellow')
     elif buttons[y][x].cget('text') == 'F':
-        buttons[y][x].config(text = '', fg = 'black', bg = 'SystemButtonFace', image = '', width = 5, height = 2)
+        buttons[y][x].config(text = '', fg = 'black', bg = 'SystemButtonFace')
+        #buttons[y][x].config(image = '', width = 5, height = 2)
     else:
         #print('hit')
         #print((top.winfo_pointery() - top.winfo_rooty()) / 40)
-        buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow', image = photo, width = 38, height = 35)
+        buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow')
+        #buttons[y][x].config(image = photo, width = 38, height = 35)
 
 def clearBoard(buttonList):
     for i in range(len(buttonList)):
