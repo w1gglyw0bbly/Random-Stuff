@@ -69,15 +69,15 @@ def buttonClicked(board, button, y, x):
 
 def checkWinCond(board, buttons):
     countChecked = 0
-    print('hit')
+    #print('hit')
     for i in range(len(buttons)):
         for j in range(len(buttons[i])):
             if buttons[i][j].cget('state') == 'disabled':
                 countChecked += 1
-    print(countChecked)
+    #print(countChecked)
     
     if (board.getRowEnd() + 1) * (board.getColEnd() + 1) - len(board.getBombs()) == countChecked:
-        print('hit good')
+        #print('hit good')
         endGame(board, 'B', buttons)
         tk.messagebox.showinfo('Nice', 'Nice')
     
@@ -220,11 +220,11 @@ def flagSquare(event, board, buttons):
         dump += 1
         w.config(bg = 'yellow')
     elif buttons[y][x].cget('text') == 'F':
-        buttons[y][x].config(text = '', fg = 'black', bg = 'SystemButtonFace')
+        buttons[y][x].config(text = '', fg = 'black', bg = 'SystemButtonFace', image = '', width = 5, height = 2)
     else:
         #print('hit')
         #print((top.winfo_pointery() - top.winfo_rooty()) / 40)
-        buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow')
+        buttons[y][x].config(text = 'F', fg = 'red', bg = 'yellow', image = photo, width = 38, height = 35)
 
 def clearBoard(buttonList):
     for i in range(len(buttonList)):
@@ -297,9 +297,8 @@ checkHard = tk.Button(top, text = 'Hard')
 checkHard.config(command = partial(setDifficulty, checkHard, board, buttonList))
 checkHard.grid(row = 0, column = board.getRowEnd(), columnspan = 3)
 
-photo = tk.PhotoImage(file = 'check.png')
-photo = photo.zoom(2)
-
+photo = tk.PhotoImage(file = 'flagIMG.png')
+#photo = photo.zoom(5)
 
 #x = Toplevel()
 
@@ -307,7 +306,7 @@ def start(buttonList, board):
     for i in range(board.getColEnd() + 1):
         buttonRow = []
         for j in range(board.getRowEnd() + 1):
-            b = tk.Button(top, width = 5, height = 2)
+            b = tk.Button(top, width = 5, height = 2) #width = 40, height = 35
             buttonRow.append(b)
             b.config(command = partial(click, board, b, buttonList, i, j))
             b.grid(row = i + 1, column = j + 1)
