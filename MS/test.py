@@ -102,7 +102,7 @@ def endGame(board, output, buttons):
                 if buttons[i][j].cget('state') == 'disabled':
                     continue
                 else:
-                    buttonClicked(board, buttons[i][j], i, j)    
+                    buttonClicked(board, buttons[i][j], i, j)
 
 def countDisabled(buttons):
     numDisabled = 0
@@ -301,7 +301,7 @@ photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
 
 
-x = Toplevel()
+#x = Toplevel()
 
 def start(buttonList, board):
     for i in range(board.getColEnd() + 1):
