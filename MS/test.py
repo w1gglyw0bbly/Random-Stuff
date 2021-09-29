@@ -3,6 +3,7 @@ from tkinter.ttk import *
 import sys
 from functools import partial
 import tkinter.messagebox
+from tkinter import *
 
 #sys.path.append('.')
 from MSTest import Minesweeper
@@ -300,7 +301,7 @@ photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
 
 
-
+x = Toplevel()
 
 def start(buttonList, board):
     for i in range(board.getColEnd() + 1):
