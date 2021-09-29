@@ -239,6 +239,9 @@ def setDifficulty(checkBox, board, buttonList):
         #checkHard.deselect()
         clearBoard(buttonList)
         buttonList.clear()
+        checkEasy.grid(column = boardNew.getRowEnd() - 3)
+        checkMedium.grid(column = boardNew.getRowEnd() -2)
+        checkHard.grid(column = boardNew.getRowEnd())
         start(buttonList, boardNew)
     elif checkBox.cget('text') == 'Medium':
         #print('hit')
@@ -247,6 +250,9 @@ def setDifficulty(checkBox, board, buttonList):
         checkHard.deselect()'''
         clearBoard(buttonList)
         buttonList.clear()
+        checkEasy.grid(column = boardNew.getRowEnd() - 3)
+        checkMedium.grid(column = boardNew.getRowEnd() -2)
+        checkHard.grid(column = boardNew.getRowEnd())
         start(buttonList, boardNew)
     elif checkBox.cget('text') == 'Hard':
         #print('hit')
@@ -255,6 +261,9 @@ def setDifficulty(checkBox, board, buttonList):
         checkMedium.deselect()'''
         clearBoard(buttonList)
         buttonList.clear()
+        checkEasy.grid(column = boardNew.getRowEnd() - 3)
+        checkMedium.grid(column = boardNew.getRowEnd() -2)
+        checkHard.grid(column = boardNew.getRowEnd())
         start(buttonList, boardNew)
     else:
         return 'bruh'
@@ -275,17 +284,17 @@ buttonList = []
 #making Easy button
 checkEasy = tk.Button(top, text = 'Easy')
 checkEasy.config(command = partial(setDifficulty, checkEasy, board, buttonList))
-checkEasy.grid(row = 0, column = 6, columnspan = 2)
+checkEasy.grid(row = 0, column = board.getRowEnd() - 3, columnspan = 2)
 
 #making Medium button
 checkMedium = tk.Button(top, text = 'Medium')
 checkMedium.config(command = partial(setDifficulty, checkMedium, board, buttonList))
-checkMedium.grid(row = 0, column = 7, columnspan = 3)
+checkMedium.grid(row = 0, column = board.getRowEnd() - 2, columnspan = 3)
 
 #making Hard button
 checkHard = tk.Button(top, text = 'Hard')
 checkHard.config(command = partial(setDifficulty, checkHard, board, buttonList))
-checkHard.grid(row = 0, column = 9, columnspan = 3)
+checkHard.grid(row = 0, column = board.getRowEnd(), columnspan = 3)
 
 photo = tk.PhotoImage(file = 'check.png')
 photo = photo.zoom(2)
