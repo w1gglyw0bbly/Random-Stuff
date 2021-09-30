@@ -5,9 +5,9 @@ block_cipher = None
 
 
 a = Analysis(['airplaneFlashCards.py'],
-             pathex=['D:\\Github Repositories\\Random-Stuff\\Matthew Flashcards'],
+             pathex=['C:\\Users\\w1ggl\\Documents\\GitHub\\Random-Stuff\\Matthew Flashcards'],
              binaries=[],
-             datas=[('D:\\Github Repositories\\Random-Stuff\\Matthew Flashcards\\data.txt', '.')],
+             datas=[('C:\\Users\\w1ggl\\Documents\\GitHub\\Random-Stuff\\Matthew Flashcards', '.')],
              hiddenimports=[],
              hookspath=[],
              hooksconfig={},

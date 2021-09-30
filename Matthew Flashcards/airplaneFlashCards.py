@@ -3,6 +3,7 @@ import tkinter as tk
 from functools import partial
 from tkinter.ttk import *
 import os
+import random
 
 root = tk.Tk()
 test = tk.Frame(root)
@@ -50,10 +51,15 @@ def showQuestions(startB, exitB, q):
     exitB.grid(pady = (20, 0), row = 2)
     #answer = tk.Button(test, text = 'Answer')
     answer.grid(row = 1, column = 0)
-    for i in qAndA:
-        q.config(text = i.split(':')[4] + '\n' + i.split(':')[0])
+    currentQs = qAndA
+    for i in range(len(currentQs)):
+        index = random.randint(0, len(currentQs) - 1)
+        #print(len(currentQs))
+        #print('length: ' + str(i) + ' index: ' + str(index))
+        q.config(text = currentQs[index].split(':')[4] + '\n' + currentQs[index].split(':')[0])
         q.grid(row = 0, column = 0)
-        answer.config(command = partial(showAnswer, answer, check, q, i))
+        answer.config(command = partial(showAnswer, answer, check, q, currentQs[index]))
+        currentQs.pop(index)
         q.wait_variable(check)
         '''while check == True:
             print('fuck')'''

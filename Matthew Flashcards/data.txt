@@ -1,10 +1,20 @@
-1. What is the function of a vortex generator?:It is designed to delay or prevent separation of the boundary layer.: (Page Reference: JSAT 1-13):Chapter 1
-2. What are the three axes of an airplane?:Longitudinal, lateral, and vertical.: (Page Reference: JSAT 1-23):Chapter 1
-3. What are the three primary flight controls of an aircraft?:The ailerons, elevator, and rudder.: (Page Reference: JSAT 1-27):Chapter 1
-4. Name several secondary flight controls and describe their general purpose?:Secondary flight controls consist of various types to trim tabs such as balance tabs, anti-servo and servo tabs, and spring tabs. Their function is to assist the pilot in moving the controls and to trim the aircraft to fly hands-off.: (Page Reference: JSAT 1-31):Chapter 1
-5. Name several types of auxiliary flight controls and describe their general purpose?: The auxiliary flight controls consist of the various high-lift devices used during low-speed flight such as leading and trailing edge flaps, slats, slots, speed brakes, etc.: (Page Reference: JSAT 1-33):Chapter 1
-6. What is a servo trim tab?: It is an auxiliary control, positioned by the movement of a cockpit control and designed to create aerodynamic forces to assist in moving a control surface.: (Page Reference: JSAT 1-32):Chapter 1
-7. What is a spring tab?: It is an auxiliary control designed to aid the movement of a primary control at high speeds when control forces become too high.: (Page Reference: JSAT 1-32):Chapter 1
-8. What is a blaance trim tab?: It is an auxiliary control designed to create aerodynamic forces to assist in moving a control surface. The tab is positioned by a control rod connected to the fixed surface on the same side as the horn on the tab.: (Page Reference: JSAT 1-32):Chapter 1
-9. What are four most common types of high lift devices?: Leading and trailing edge flaps, slats, and slots.: (Page Reference: JSAT 1-33):Chapter 1
-10. Describe some of the tools used to check control surface travel?: A universal propeller protractor or special control surface protracotor.: (Page Reference: JSAT 1-44):Chapter 1
+1. What is the function of a vortex generator?:It is designed to delay or prevent separation of the boundary layer.:(Page Reference: JSAT 1-13):Chapter 1
+2. What are the three axes of an airplane?:Longitudinal, lateral, and vertical.:(Page Reference: JSAT 1-23):Chapter 1
+3. What are the three primary flight controls of an aircraft?:The ailerons, elevator, and rudder.:(Page Reference: JSAT 1-27):Chapter 1
+4. Name several secondary flight controls and describe their general purpose?:Secondary flight controls consist of various types to trim tabs such as balance tabs, anti-servo and servo tabs, and spring tabs. Their function is to assist the pilot in moving the controls and to trim the aircraft to fly hands-off.:(Page Reference: JSAT 1-31):Chapter 1
+5. Name several types of auxiliary flight controls and describe their general purpose?:The auxiliary flight controls consist of the various high-lift devices used during low-speed flight such as leading and trailing edge flaps, slats, slots, speed brakes, etc.:(Page Reference: JSAT 1-33):Chapter 1
+6. What is a servo trim tab?:It is an auxiliary control, positioned by the movement of a cockpit control and designed to create aerodynamic forces to assist in moving a control surface.:(Page Reference: JSAT 1-32):Chapter 1
+7. What is a spring tab?:It is an auxiliary control designed to aid the movement of a primary control at high speeds when control forces become too high.:(Page Reference: JSAT 1-32):Chapter 1
+8. What is a blaance trim tab?:It is an auxiliary control designed to create aerodynamic forces to assist in moving a control surface. The tab is positioned by a control rod connected to the fixed surface on the same side as the horn on the tab.:(Page Reference: JSAT 1-32):Chapter 1
+9. What are four most common types of high lift devices?:Leading and trailing edge flaps, slats, and slots.:(Page Reference: JSAT 1-33):Chapter 1
+10. Describe some of the tools used to check control surface travel?:A universal propeller protractor or special control surface protracotor.:(Page Reference: JSAT 1-44):Chapter 1
+11. Name three mechanical methods by which flight control systems may be actuated.:Cables, push-pull rods, and torque tubes.:(Page Reference: JSAT 1-44):Chapter 1
+12. What is a fairlead?:It is a device to prevent a cable from rubbing on the aircraft structure.:(Page Reference: JSAT 1-48):Chapter 1
+13. What are the most likely places for a control cable to wear or break?:Where the cables pass over pulleys or through fairleads.:(Page Reference: JSAT 1-47):Chapter 1
+14. What information is required before a cable rigging chart can be used?:The ambient temperature and the cable size.:(Page Reference: JSAT 1-48):Chapter 1
+15. What is the function of a cable tension regulator?:It automatically adjusts the cable tension to compensate for expansion and contraction in the aircraft structure.:(Page Reference: JSAT 1-48):Chapter 1
+16. Describe the function of a rotorcraft collective pitch control.:The collective control causes each rotor blade to change its pitch angle by the same amount, thus increasing or decreasing the lift produced by the rotor.:(Page Reference: JSAT 1-71):Chapter 1
+17. Describe the function of a rotorcraft cyclic pitch control.:The cyclic control tilts the main rotor disc by changing the pitch angle of each rotor blade during its cycle of rotation, which causes the helicopter to move in the direction the rotor tilts.:(Page Reference: JSAT 1-73):Chapter 1
+18. What mechanism is most commonly used to compensate for the torque produced by the main rotor of a helicopter?:The tail (or anti-torque) rotor.:(Page Reference: JSAT 1-74):Chapter 1
+19. How is the amount of thrust produced by the tail rotor controlled?:By moving the foot pedals.:(Page Reference: JSAT 1-74):Chapter 1
+20. Why should control surfaces be locked when an aircraft is parked?:To prevent damage from the wind.:(Page Reference: JSGT 13-17):Chapter 1
