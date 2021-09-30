@@ -1,0 +1,1 @@
+pyinstaller airplaneFlashCards.py --onefile --windowed --add-data "D:\Github Repositories\Random-Stuff\Matthew Flashcards\data.txt;."
