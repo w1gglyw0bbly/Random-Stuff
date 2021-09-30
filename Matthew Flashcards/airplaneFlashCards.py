@@ -61,7 +61,7 @@ def showQuestions(startB, exitB, q):
 
 '''Making labels'''
 #Question Label
-question = tk.Label(test, text = '', relief = 'solid')
+question = tk.Label(test, text = '', relief = 'solid', wraplength = 500)
 question.grid(padx = 50, pady = 15, ipadx = 5, ipady = 2)
 question.forget()
 
