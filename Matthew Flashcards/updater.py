@@ -2,15 +2,22 @@ import requests
 from os import getcwd
 import os
 
-url = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/test.py?token=AVKQGTPN5TGJM5NA7HOTFIDBKXEXK'
+urlTest = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/test.py?token=AVKQGTPN5TGJM5NA7HOTFIDBKXEXK'
+urlVersion = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/appInfo.txt'
+
 directory = getcwd()
-filename = directory + '\\test.py'
-print(filename)
-r1 = requests.get(url)
-r2 = asafdsadsgg
+filenameTest = directory + '\\test.py'
+filenameAppInfo = directory + '\\appInfo.txt'
+print(filenameTest)
+rTest = requests.get(urlTest)
+rVersion = requests.get(urlVersion)
+
+f = open(filenameAppInfo, 'r')
+text = f.read().split(':')[1]
+print(text)
+print(str(rVersion.content.decode('utf-8')).split(':')[1])
 
 
-
-f = open(filename, 'w')
-f.write(str(r.content.decode('utf-8')))
+f = open(filenameTest, 'w')
+f.write(str(rTest.content.decode('utf-8')))
 f.close()
