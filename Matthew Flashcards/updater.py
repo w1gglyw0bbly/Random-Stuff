@@ -4,12 +4,10 @@ import subprocess
 import sys
 import urllib.request
 
-with urllib.request.urlopen('https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/updater.exe') as url:
-    s = url.read()
-print(s)
-#testfile = urllib.request.urlopen()
-#s.retrieve('https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/updater.exe', 'updater.exe')
-print(testfile)
+#url = 'https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/bruh'
+url = 'https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/dist/updater.exe'
+#urllib.request.urlretrieve(url, 'D:\Github Repositories\Random-Stuff\Matthew Flashcards\\bruh.txt')
+urllib.request.urlretrieve(url, 'D:\Github Repositories\Random-Stuff\Matthew Flashcards\\test\\test.exe')
 
 urlTest = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/test.py?token=AVKQGTPN5TGJM5NA7HOTFIDBKXEXK'
 urlVersion = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/appInfo.txt'
