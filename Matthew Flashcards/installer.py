@@ -3,7 +3,7 @@ import urllib.request
 from tkinter import filedialog as fd
 from tkinter import *
 import tkinter as tk
-import partial
+from functools import partial
 
 root = Tk()
 test = tk.Frame(root)
@@ -22,7 +22,10 @@ class Directory:
 filename = Directory('')
 
 def yourMom():
-    
+    urlUpdater = 'https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/dist/airplaneFlashCards.exe'
+    urlMain = 'https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/dist'
+    #urllib.request.urlretrieve(urlUpdater, 'C:\\Users\w1ggl\\Desktop\\testing\\updater.exe')
+    urllib.request.urlretrieve(urlMain, 'C:\\Users\w1ggl\\Desktop\\testing\\bruh')
 
 def bruh(b):
     #test = fd.askopenfilename()
