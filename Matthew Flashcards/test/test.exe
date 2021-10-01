@@ -90,8 +90,8 @@
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
   <meta name="apple-itunes-app" content="app-id=1477376905" />
-    <meta name="twitter:image:src" content="https://opengraph.githubassets.com/4acf24a863f2b3337896457a0452a6c563137e5dd54da1369acff8516b888b3c/w1gglyw0bbly/Random-Stuff" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Random-Stuff/updater.exe at main · w1gglyw0bbly/Random-Stuff" /><meta name="twitter:description" content="Random projects. Contribute to w1gglyw0bbly/Random-Stuff development by creating an account on GitHub." />
-    <meta property="og:image" content="https://opengraph.githubassets.com/4acf24a863f2b3337896457a0452a6c563137e5dd54da1369acff8516b888b3c/w1gglyw0bbly/Random-Stuff" /><meta property="og:image:alt" content="Random projects. Contribute to w1gglyw0bbly/Random-Stuff development by creating an account on GitHub." /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Random-Stuff/updater.exe at main · w1gglyw0bbly/Random-Stuff" /><meta property="og:url" content="https://github.com/w1gglyw0bbly/Random-Stuff" /><meta property="og:description" content="Random projects. Contribute to w1gglyw0bbly/Random-Stuff development by creating an account on GitHub." />
+    <meta name="twitter:image:src" content="https://opengraph.githubassets.com/30d549e8a999b0b28e8730662806306ad11c307a70db7a08e97b3041917b3833/w1gglyw0bbly/Random-Stuff" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Random-Stuff/updater.exe at main · w1gglyw0bbly/Random-Stuff" /><meta name="twitter:description" content="Random projects. Contribute to w1gglyw0bbly/Random-Stuff development by creating an account on GitHub." />
+    <meta property="og:image" content="https://opengraph.githubassets.com/30d549e8a999b0b28e8730662806306ad11c307a70db7a08e97b3041917b3833/w1gglyw0bbly/Random-Stuff" /><meta property="og:image:alt" content="Random projects. Contribute to w1gglyw0bbly/Random-Stuff development by creating an account on GitHub." /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Random-Stuff/updater.exe at main · w1gglyw0bbly/Random-Stuff" /><meta property="og:url" content="https://github.com/w1gglyw0bbly/Random-Stuff" /><meta property="og:description" content="Random projects. Contribute to w1gglyw0bbly/Random-Stuff development by creating an account on GitHub." />
     
 
 
@@ -101,7 +101,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="C80E:2DEC:1FB431:334543:61579CD1" data-pjax-transient="true"/><meta name="html-safe-nonce" content="b07f5650622922a100b9103abcbb19c00d561ee71089d362db7b0b8b6c715875" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJDODBFOjJERUM6MUZCNDMxOjMzNDU0Mzo2MTU3OUNEMSIsInZpc2l0b3JfaWQiOiIyMTQ0NjU3Njk4NTkxMzE3MjAxIiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="332dc79e40431040625291a965676e674069fcd17bff066b8da79ec8c53965bf" data-pjax-transient="true"/>
+  <meta name="request-id" content="E968:1D69:1117B9:20A800:61579D50" data-pjax-transient="true"/><meta name="html-safe-nonce" content="03dbe7c90e79d813ef7fcdfe24a50ed7dca6d6a31de005fd1b561e169ce18c09" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJFOTY4OjFENjk6MTExN0I5OjIwQTgwMDo2MTU3OUQ1MCIsInZpc2l0b3JfaWQiOiIxODExMjEyNDUzNjYyOTI0MTEyIiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="3889714e26cc0bd077f8bb279ba85d9103c7f44d5ae49d80e1927c5bc0c5748d" data-pjax-transient="true"/>
 
     <meta name="hovercard-subject-tag" content="repository:406605716" data-pjax-transient>
 
@@ -373,7 +373,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="05SWdoNAN7g+OjbsVkDYlEGm9R4hmrQjbrVC33fIFswlKuxNMhCNQ/5ZAZA7eWANGQJ7BcwzE23gFScXC8XsXw==" />
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="38LluGmoC4aXyb5whPxGn7O61p/YW7Hqz5LjLqJwptAm046JwhbaDTNF8/d/MDz4t8/RnXjN6YR3oqGmoI5oAQ==" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -855,9 +855,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/w1gglyw0bbly/Random-Stuff/blob/a9c9ee3ba8a293f841daaa828ba2794082987fe5/Matthew%20Flashcards/dist/updater.exe">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/w1gglyw0bbly/Random-Stuff/blob/44b1cb4e368343f934373d5ee6f7df040b3e52db/Matthew%20Flashcards/dist/updater.exe">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v22:efd223f63713b129fce03d9615cbadcd6f2e406a3276b3c0f18f145bb2ee4a28 -->
+    <!-- blob contrib key: blob_contributors:v22:17a3302f4b02a93ab65dce9098a2cbee01eaebbef2c38540ee0c058f1ced1b45 -->
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-wrap flex-md-nowrap flex-justify-between flex-md-justify-start">
       
@@ -1058,7 +1058,7 @@
 
 </clipboard-copy>            </li>
             <li>
-              <clipboard-copy data-toggle-for="blob-more-options-details" aria-label="Copy permalink" value="https://github.com/w1gglyw0bbly/Random-Stuff/blob/a9c9ee3ba8a293f841daaa828ba2794082987fe5/Matthew%20Flashcards/dist/updater.exe" data-view-component="true" class="dropdown-item cursor-pointer">
+              <clipboard-copy data-toggle-for="blob-more-options-details" aria-label="Copy permalink" value="https://github.com/w1gglyw0bbly/Random-Stuff/blob/44b1cb4e368343f934373d5ee6f7df040b3e52db/Matthew%20Flashcards/dist/updater.exe" data-view-component="true" class="dropdown-item cursor-pointer">
     
                 <span class="d-flex flex-items-baseline">
                   <span class="flex-auto">Copy permalink</span>
@@ -1104,7 +1104,7 @@
 
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1">
 
-    7.04 MB
+    7.03 MB
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between hide-sm hide-md">
@@ -1130,7 +1130,7 @@
 </svg>
           </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/w1gglyw0bbly/Random-Stuff/delete/main/Matthew%20Flashcards/dist/updater.exe" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="J4bOy3u93aHTwEmlWXNBR7IKXvPgKQ+K99VXYpk1RENxnxfLMo3FH8hE9P26eHTLdsH/GfG0k7TdKSNd5HkFAg==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/w1gglyw0bbly/Random-Stuff/delete/main/Matthew%20Flashcards/dist/updater.exe" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="HDXyxMw5nOuUf4nqz3NJtnFqf+0mCt23EalsL6q7YqNy9Qxx+G6oA8vADVMD0LrwTpNty/VcoKoeT0ewHd5zqQ==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="You must be signed in to make or propose changes" data-disable-with>
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">

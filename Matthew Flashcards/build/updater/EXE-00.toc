@@ -47,8 +47,8 @@
   ('updater',
    'D:\\Github Repositories\\Random-Stuff\\Matthew Flashcards\\updater.py',
    'PYSOURCE'),
-  ('python39.dll', 'D:\\Python\\python39.dll', 'BINARY'),
   ('VCRUNTIME140.dll', 'D:\\Python\\VCRUNTIME140.dll', 'BINARY'),
+  ('python39.dll', 'D:\\Python\\python39.dll', 'BINARY'),
   ('_decimal', 'D:\\Python\\DLLs\\_decimal.pyd', 'EXTENSION'),
   ('select', 'D:\\Python\\DLLs\\select.pyd', 'EXTENSION'),
   ('_overlapped', 'D:\\Python\\DLLs\\_overlapped.pyd', 'EXTENSION'),
@@ -84,7 +84,7 @@
  [],
  False,
  False,
- 1633131810,
+ 1633131896,
  [('runw.exe',
    'D:\\Python\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\runw.exe',
    'EXECUTABLE')])

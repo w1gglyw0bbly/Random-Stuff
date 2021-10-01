@@ -29,7 +29,7 @@ repoText = str(rVersion.content.decode('utf-8')).split(':')[1]
 #print(text)
 #print(str(rVersion.content.decode('utf-8')).split(':')[1])
 if localText == repoText:
-    subprocess.run('dist\\airplaneFlashCards.exe')
+    subprocess.run('main.exe')
     print('cum')
 else:
     f = open(filenameMain, 'w')
