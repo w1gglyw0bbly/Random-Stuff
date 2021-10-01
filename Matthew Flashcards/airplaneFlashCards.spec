@@ -4,7 +4,7 @@
 block_cipher = None
 
 
-a = Analysis(['airplaneFlashCards.py'],
+a = Analysis(['airplaneFlashCards.pyw'],
              pathex=['D:\\Github Repositories\\Random-Stuff\\Matthew Flashcards'],
              binaries=[],
              datas=[('D:\\Github Repositories\\Random-Stuff\\Matthew Flashcards\\data.txt', '.')],
