@@ -23,9 +23,9 @@ filename = Directory('')
 
 def yourMom():
     urlUpdater = 'https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/dist/airplaneFlashCards.exe'
-    urlMain = 'https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/dist'
+    urlMain = 'https://github.com/w1gglyw0bbly/Random-Stuff/raw/main/Matthew%20Flashcards/dist/updater.exe'
     #urllib.request.urlretrieve(urlUpdater, 'C:\\Users\w1ggl\\Desktop\\testing\\updater.exe')
-    urllib.request.urlretrieve(urlMain, 'C:\\Users\w1ggl\\Desktop\\testing\\bruh')
+    urllib.request.urlretrieve(urlMain, 'C:\\Users\w1ggl\\Desktop\\testing\\main.exe')
 
 def bruh(b):
     #test = fd.askopenfilename()
