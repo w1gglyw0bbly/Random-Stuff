@@ -26,7 +26,7 @@ def end():
     root.destroy()
 
 def yourMom(b):
-    urlMain = 'https://github.com/w1gglyw0bbly/Random-Stuff/raw/main/Matthew%20Flashcards/dist/airplaneFlashCards.exe'
+    urlMain = 'https://github.com/w1gglyw0bbly/Random-Stuff/raw/main/Matthew%20Flashcards/dist/main.exe'
     urlUpdater = 'https://github.com/w1gglyw0bbly/Random-Stuff/raw/main/Matthew%20Flashcards/dist/updater.exe'
     urlVersionInfo = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/dist/appInfo.txt'
     urllib.request.urlretrieve(urlMain, os.path.join(filename.getFilename(), 'main.exe'))
