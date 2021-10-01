@@ -69,6 +69,16 @@
   ('certifi\\cacert.pem',
    'D:\\Python\\lib\\site-packages\\certifi\\cacert.pem',
    'DATA'),
+  ('data.txt',
+   'D:\\Github Repositories\\Random-Stuff\\Matthew Flashcards\\data.txt',
+   'DATA'),
+  ('appInfo.txt',
+   'D:\\Github Repositories\\Random-Stuff\\Matthew Flashcards\\appInfo.txt',
+   'DATA'),
+  ('airplaneFlashCards.pyw',
+   'D:\\Github Repositories\\Random-Stuff\\Matthew '
+   'Flashcards\\airplaneFlashCards.pyw',
+   'DATA'),
   ('updater.exe.manifest',
    'D:\\Github Repositories\\Random-Stuff\\Matthew '
    'Flashcards\\build\\updater\\updater.exe.manifest',

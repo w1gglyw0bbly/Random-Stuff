@@ -1,6 +1,15 @@
 import requests
 from os import getcwd
-import os
+import subprocess
+import sys
+import urllib.request
+
+with urllib.request.urlopen('https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/updater.exe') as url:
+    s = url.read()
+print(s)
+#testfile = urllib.request.urlopen()
+#s.retrieve('https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/updater.exe', 'updater.exe')
+print(testfile)
 
 urlTest = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/test.py?token=AVKQGTPN5TGJM5NA7HOTFIDBKXEXK'
 urlVersion = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/appInfo.txt'
@@ -9,7 +18,7 @@ urlMain = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matt
 directory = getcwd()
 filenameTest = directory + '\\test.py'
 filenameAppInfo = directory + '\\appInfo.txt'
-filenameMain = directory + '\\airplaneFlashCards.py'
+filenameMain = directory + '\\airplaneFlashCards.pyw'
 print(filenameTest)
 rTest = requests.get(urlTest)
 rVersion = requests.get(urlVersion)
@@ -21,7 +30,8 @@ repoText = str(rVersion.content.decode('utf-8')).split(':')[1]
 #print(text)
 #print(str(rVersion.content.decode('utf-8')).split(':')[1])
 if localText == repoText:
-    os.system('airplaneFlashCards.py')
+    subprocess.run('airplaneFlashCards.pyw')
+    print('cum')
 else:
     f = open(filenameMain, 'w')
     f.write(str(rMain.content.decode('utf-8')))
