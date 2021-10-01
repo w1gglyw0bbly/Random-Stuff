@@ -3,6 +3,7 @@ from os import getcwd
 import subprocess
 import sys
 import urllib.request
+import os
 
 #url = 'https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/bruh'
 url = 'https://github.com/w1gglyw0bbly/Random-Stuff/blob/main/Matthew%20Flashcards/dist/updater.exe'
@@ -14,9 +15,9 @@ urlVersion = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/M
 urlMain = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/airplaneFlashCards.py'
 
 directory = getcwd()
-filenameTest = directory + '\\test.py'
-filenameAppInfo = directory + '\\appInfo.txt'
-filenameMain = directory + '\\airplaneFlashCards.pyw'
+filenameTest = os.path.join(directory, 'test.py')
+filenameAppInfo = os.path.join(directory, 'appInfo.txt')
+filenameMain = os.path.join(directory, 'airplaneFlashCards.pyw')
 print(filenameTest)
 rTest = requests.get(urlTest)
 rVersion = requests.get(urlVersion)
@@ -28,7 +29,7 @@ repoText = str(rVersion.content.decode('utf-8')).split(':')[1]
 #print(text)
 #print(str(rVersion.content.decode('utf-8')).split(':')[1])
 if localText == repoText:
-    subprocess.run('airplaneFlashCards.pyw')
+    subprocess.run('dist\\airplaneFlashCards.exe')
     print('cum')
 else:
     f = open(filenameMain, 'w')
