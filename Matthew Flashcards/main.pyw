@@ -11,6 +11,9 @@ root = tk.Tk()
 test = tk.Frame(root)
 check = tk.IntVar()
 
+def onClosing():
+    root.destroy()
+
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
     try:
@@ -103,6 +106,7 @@ nextB = tk.Button(test, text = 'Next Question')
 test.pack()
 
 #loop bruh
+root.protocol('WM_DELETE_WINDOW', onClosing)
 root.mainloop()
 
 sys.exit()

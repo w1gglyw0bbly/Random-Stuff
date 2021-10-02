@@ -19,6 +19,8 @@ class Directory:
     def setFilename(self, filename):
         self.filename = filename
 
+def onClosing():
+    root.destory()
 
 filename = Directory('')
 
@@ -50,6 +52,7 @@ b.grid(row = 0, column = 0, pady = 20)
 
 
 #root.destroy()
+root.protocol('WM_DELETE_WINDOW', onClosing)
 tk.mainloop()
 
 
