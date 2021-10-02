@@ -156,4 +156,16 @@
 6. How can a pilot determine  that the landing gear is down and locked?:A green light or lights and/or another type of visual indictaor.:(Page Reference: JSAT 10-14):Chapter 10
 7. Name at least two conditions that would activate a takeoff configuration warning system in a jet transport aircraft.:Incorrect leading or trailing edge flap position, stabilizer position, or speed brake not stowed. The manufacturer may establish other conditions.:(Page Reference: JSAT 10-14):Chapter 10
 8. What landing gear positions must be indicated by regulations?:Down and locked an up and locked.:(Page Reference: JSAT 10-14):Chapter 10
+9. Under what conditions will a landing gear aural warning sound?:When the throttle is retarded and the landing gear is not down and locked.:(Page Reference: JSAT 10-14):Chapter 10
+10. How does a takeoff configuration warning differ from a landing gear warning?:Takeoff warnings are usually an intermittent horns while landing gear warnings are steady.:(Page Reference: JSAT 10-14):Chapter 10
+11. What is the function of a Mach airspeed warning system?:To alert the pilot that the never-exceed airspeed limit has been reached or exceeded.:(Page Reference: JSAT 10-15):Chapter 10
+12. What systems are commonly used to activate the landing gear warning systems?:The throttles (thrust levers) and the wing flaps.:(Page Reference: JSAT 10-13):Chapter 10
+13. Why do airplanes with bleed air anti-icing of the wing leading edge have an anti-ice overheat light(s)?:To indicate an over-temperature condition, usually as the result of a break in the bleed air ducts.:(Page Reference: JSAT 13-4):Chapter 10
+14. What warning system may be required whem a nickel-cadmium battery is installed in an aircraft?:A battery temperature monitoring system.:(Page Reference: JSAT 7-31):Chapter 10
+15. At what time would a check of a landing gear warning system normally be made?:During a landing gear retraction test.:(Page Reference: JSAT 9-18):Chapter 10
+16. What is the purpose of an annunciator system?:To show, by means of a warning light, that some system parameter requires attention by the flight crew.:(Reference: JSAD):Chapter 10
+17. If an aircraft with retractable landing gear has only one green light to indicate the gear is down and locked, how will the switches be connected, in series or in parallel?:In series.:(Page Reference: JSAT 10-14):Chapter 10
+18. Where would you locate the procedures for checking and adjusting the landing gear switches?:In the aircraft manufacturer/'s manual. (Page Reference: JSAT 9-18):Chapter 10
+19. What is the usual means for alerting the crew of a jet transport that the cabin doors are not properly closed?:A warning light.:(Page Reference: JSAT 10-16):Chapter 10
+20. Why are transport category aircraft equipped with a master caution and warning system?:To alert the crew that a malfunction has occurred and corrective action may be required.:(Page Reference: JSAT 10-15):Chapter 10
 

@@ -29,7 +29,7 @@ def yourMom(b):
     urlMain = 'https://github.com/w1gglyw0bbly/Random-Stuff/raw/main/Matthew%20Flashcards/dist/main.exe'
     urlUpdater = 'https://github.com/w1gglyw0bbly/Random-Stuff/raw/main/Matthew%20Flashcards/dist/updater.exe'
     urlVersionInfo = 'https://raw.githubusercontent.com/w1gglyw0bbly/Random-Stuff/main/Matthew%20Flashcards/dist/appInfo.txt'
-    urlLauncher = 'https://github.com/w1gglyw0bbly/Random-Stuff/raw/main/Matthew%20Flashcards/dist/launcher.exe'
+    urlLauncher = 'https://github.com/w1gglyw0bbly/Random-Stuff/raw/main/Matthew%20Flashcards/dist/installer.exe'
     urllib.request.urlretrieve(urlMain, os.path.join(filename.getFilename(), 'main.exe'))
     urllib.request.urlretrieve(urlUpdater, os.path.join(filename.getFilename(), 'updater.exe'))
     urllib.request.urlretrieve(urlVersionInfo, os.path.join(filename.getFilename(), 'appInfo.txt'))
