@@ -18,3 +18,142 @@
 18. What mechanism is most commonly used to compensate for the torque produced by the main rotor of a helicopter?:The tail (or anti-torque) rotor.:(Page Reference: JSAT 1-74):Chapter 1
 19. How is the amount of thrust produced by the tail rotor controlled?:By moving the foot pedals.:(Page Reference: JSAT 1-74):Chapter 1
 20. Why should control surfaces be locked when an aircraft is parked?:To prevent damage from the wind.:(Page Reference: JSGT 13-17):Chapter 1
+1. What is the major type of damage to aluminum structures that is caused by exposure to the weather?:Corrosion.:(Page Reference: JSAT 2-13):Chapter 2
+2. Name several methods for forming sheet metal.:Bending or folding. stretching, shrinking, bumping, and crimping.:(Page Refence: JSAT 2-32):Chapter 2
+3. What are the dimensions of a properly formed rivet head?:The head should be 1 1/2 times the shank diameter in width and 1/2 the shank diameter in height.:(Page Reference: JSAT 2-39):Chapter 2
+4. Describe the markings found on the heads of A, B, D, AD, and DD rivets.:A rivets are plain, B rivets have a cross, D rivets have a raised dot, AD rivets have a dimple, and DD rivets have a double dash.:(Page Reference: JSAT 2-41):Chapter 2
+5. What happens to the stem of a self-plugging (friction lock) rivet when the rivet is installed?:The stem is pulled until is snaps off and the remaining projecting part is trimmed flush with the head.:(Page Reference: JSAT 2-43):Chapter 2
+6. Name at least three types of self-plugging mechanical lock rivets.:CherryMAX, CherryLOCK, OLYMPIC-LOK, and HuckLok rivets.:(Page Reference: JSAT 2-43):Chapter 2
+7. What is the difference between the tools required to pull a CherryLOCK rivet and a CherryMAX rivet?:CherryLOCK rivets require a tool for each different size and head shape, while one pulling tool will set any size CherryMAX rivet.:(Page Reference: JSAT 2-44):Chapter 2
+8. Which of the five stresses is the most common cause of rivet failure?:Shear.:(Page Reference: JSAT 2-55):Chapter 2
+9. If a 2024 rivet must be replaced with a 2117 rivet, how do you determine the size to be used?:For 5/32/" or smaller diameter, use the next larger size 2117 rivet, assuming that the edge distance and spacing meet the minimum requirements.:(Page Reference: JSAT 2-60):Chapter 2
+10. Describe the process for determining the total length of a solid rivet for a particular insallation.:Add the grip length (thickness of the materials being joined) plus 1 1/2 times the rivet diameter.:(Page Reference: JSAT 2-59):Chapter 2
+11. What minimum edge distance and spacing should be used for a single row of protruding head rivets?:Not less than two rivet diameters from the edge and not less than three rivet diameters apart.:(Page Reference: JSAT 2-60):Chapter 2
+12. How can a mechanic determine whether the countersink for a flush rivet should be dimpled or drilled?:By the thickness of the top sheet; thin sheets are dimpled while thick sheets may be countersunk.:(Page Reference: JSAT 2-65):Chapter 2
+13. What action is taken to prevent cracks from forming while dimpling magnesium or some hard sheet metals?:Hot dimpling equipment is used to preheat and soften the metal before the dimple is formed.:(Page Reference: JSAT 2-68):Chapter 2
+14. What type of damage can occur when using a rivet set that does not properly fir the rivet?:If the radius of the set is too small, the rivet head may be damaged, whereas a set with an over-sized radius may cause damage to the sheet metal.:(Page Reference: JSAT 2-71):Chapter 2
+15. Why is it important to use the proper size and weight bucking bar when performing sheet metal riveting?:If a bucking bar is too large or heavy it may be difficult to control and may cuase damage to the surrounding structure, whereas a bucking bar that is too light will not properly upset the rivet before work hardening occurs.:(Page Reference: JSAT 2-72):Chapter 2
+16. What procedures should be followed to properly remove a solid-shank rivet?:Center punch the rivet and then drill just to the base of the ribet head with the same size or one size smaller drill. Once drilled, use a pin punch to tip off the rivet head and drive the remaining shank out of the hole while supporting the surrounding metal.:(Page Reference: JSAT 2-74):Chapter 2
+17. What are the two special calculations that must be made when bending sheet metal?:Bend allowance and setback.:(Page Reference: JSAT 2-77):Chapter 2
+18. What factors must be considered in order to determine setback?:The thickness of the metal and the bend radius.:(Page Reference: JSAT 2-77):Chapter 2
+19. What is done to a corner where two bends intersect to prevent cracking?:Relief holes are drilled in the corner.:(Page Reference: JSAT 2-85):Chapter 2
+20. What are the two reasons for installing a lightening hole in a sheet metal wing rib?:Lightening holes reduce the weight and increase stiffness.:(Page Reference: JSAT 2-88):Chapter 2
+21. Describe a joggle and explain its function.:A joggle is an offset formed at an intersection of two or more sheets of metal to allow the multiple sheets to be stacked flat against each other.:(Page Reference: JSAT 2-89):Chapter 2
+22. When repairing an all-metal aircraft, how do you determine what metals should be used?:Always use metal of the same type and thickness as the original structure.:(Page Reference: JSAT 2-97):Chapter 2
+1. What are the three forms of wood commonly used in aircraft construction?:Solid, laminated, and plywood.:(Page Reference: JSAT 3-2): Chapter 3
+2. What type of wood should be used when splicing or reinforcing plywood webs?:The same type of plywood as originally used.:(Page Reference: JSAT 3-19):Chapter 3
+3. Name at least four different types of defects found in wood.:Knots, checks, splits, pitch pockets, corss grain, curly grain, decay, dry rot, etc.:(Page Reference: JSAT 3-4):Chapter 3
+4. Can a section of wood containing a hard knot be used?:Yes, within specified limits.:(Page Referenced: JSAT 3-5):Chapter 3
+5. What type of glue may have been used in older wooden aircraft construction that requires careful inspection to detect deterioration?:Casein glue.:(Page Reference: JSAT 3-6):Chapter 3
+6. What are the three types of glues used in modern aircraft construction and repair?:Resorcinol glue, Phenol-formaldehyde glue, and epoxy resin glue.:(Page Reference: JSAT 3-6):Chapter 3
+7. Is compression wood acceptable for structural reparis?:No.:(Page Reference: JSAT 3-6):Chapter 3
+8. Why should the various pieces of wood being joined be kept in the same room for at least 24 hours prior to joining?:To allow the moisture content to equalize, thereby minimizing dimensional changes in the wood.:(Page Reference: JSAT 3-7):Chapter 3
+9. Why is it important to consider the open-assembly time time when gluing wooden structures?:If the maximum open-assembly time is exceeded, the joint may fail since the glue may begin setting up before the joint assembled.:(Page Reference: JSAT 3-7):Chapter 3
+10. Why is it important to apply the proper clamping pressure to a glue joint?:Clamping forces air out of the joint, brings the wood surfaces together evenly and is, in part, responsible for the strength of the glue line.:(Page Reference: JSAT 3-8):Chapter 3
+11. Describe some of the methods used to apply pressure to glue joints.:Clamps, nailing strips, power presses, brads, anils, and small screws.:(Page Reference: JSAT 3-8):Chapter 3
+12. What minimum curing temperature should be observed when joining wood with various adhesives?:70 degrees Fahrenheit or as specified by the glue manufacturer.:(Page Reference: JSAT 3-8):Chapter 3
+13. When inspecting wood structures, why might it be important to consider stains and discolored areas?:Stains and discoloration usually accompany decay and/or rot.:(Page Reference: JSAT 3-10):Chapter 3
+14. Describe the acceptable methods used to repair elongated bolts holes found in a wooden wing spar.:Remove the setion containing the elongated hole(s) and splice in a new section or replace the entire spar.:(Page Reference: JSAT 3-12):Chapter 3
+15. What type of joint is used to splice a solid or rectangular wood spar?:A scarf joint.:(Page Reference: JSAT 3-12):Chapter 3
+16. In what areas are splices to a wood spar prohibited?:Under an attachment fitting for the wing root, landing gear, engine-mount, lift, or inter-plane strut.:(Page Reference: JSAT 3-12):Chapter 3
+17. What is the maximum number of splices allowed for any single spar?:Two.:(Page Reference: JSAT 3-12):Chapter 3
+18. Describe the characteristics of a scarf joint.:The pieces to be joined are tapered or beveled on a slope of 1 to 10 or 1 to 12.:(Page Reference: JSAT 3-12):Chapter 3
+19. Why must the beveled cut be accurate on both pieces of wood being repaired with a scarfed joint?:The two pieces must match exactly to ensure a tight glue joint.:(Page Reference: JSAT 3-12):Chapter 3
+20. What are the two primary uses for plywood in aircraft construction?:Gusset (or reinforcing) plates and aircraft skin.:(Page Reference: JSAT 3-16):Chapter 3
+21. Provide examples of at least three types of plywood skin repairs.:Splayed patches, surface pathces, plug patches, and scarfed patches.:(Page Reference: JSAT 3-18):Chapter 3
+22. What type of patch should be used to repair small holes in thin plywood skin if the skin is less than 1/10th inch thick?:A splayed patch may be used if the hole can be cleared out to a diameter of less than 15 thickness of the skin.:(Page Reference: JSAT 3-18):Chapter 3
+23. What should be done to prevent a plywood patch and the pressure plate from sticking together if glue is extruded from the joint?:Place a piece of waxed paper or vinyl plastic between the patch and the pressure plate.:(Page Reference: JSAT 3-18):Chapter 3
+24. Why are lightweight steel bushing sometimes used in wooden structures?:Bushings prevent the wood from being crushed when bolts are tightened.:(Page Reference: AC 43.13-1B):Chapter 3
+25. What is the purpose of large surface area washers when used on wooden structures?:Large washers provide additional bearing area for hardware to help preclude damage to the wood when the hardware is tightened.:(Page Reference: AC 43.13-1B):Chapter 3
+26. Name several facings and core materials used in bonded honeycomb structures intended for special applications.:Stainless steel, titanium, magnesium, plywood, glass, nylon, and cotton cloth.:(Page Refence: FAH 7-11):Chapter 3
+27. Describe the construction of a bonded honeycomb structure.:It is a laminated structure that has a solid facing bonded to either side of a core consisting of open, six-sided cells.:(Page Reference: FAH 7-10):Chapter 3
+28. What must be done with a damaged area in a bonded honeycomb structure prior to beginning repairs?:The area must first be inspected to determine the damaged area prior to completely removing the damaged material.:(Page Reference: FAH 7-34):Chapter 3
+29. A drill bit used for drilling composites should operate at approximately what speed?:Use an air-driven tool capable of a free speed of up to 20,000 rpm.:(Page Reference: FAH 7-49):Chapter 3
+30. What are the most common causes for delamination of a composite structure?:Sonic vibration, expansion of internal moisture, liquid leakage, and a manufacturing error.:(Page Reference: FAH 7-13):Chapter 3
+31. What type of defect in, or damage to, a bonded honeycomb structure can be repaired using the potted repair method?:Filling a hole.:(Page Reference: FAH 7-34):Chapter 3
+32. Name some of the factors that cause crazing in transparent plastic windows and windshields?:Exposure to ultraviolet light, stress, solvents, and improper handling.:(Page Reference: JSAT 3-25):Chapter 3
+33. How should a hole be drilled in Plexiglas to avoid damage to the hole when the drill breaks through to the underside?:Back up the plastic with a piece of wood and feed the drill slowly.:(Page Reference: JSAT 3-27):Chapter 3
+1. Name the three principle types of welding.:Gas welding, electric arc welding, and electric resistance welding.:(Page Reference: JSAT 4-3):Chapter 4
+2. What are some advantages of gas shielded arc welding?:The weld is stronger, more ductile, and more corrosion resistant.:(Page Reference: JSAT 4-4):Chapter 4
+3. Which method of welding is less likely to cause buckling or warping of thin metal sheets?:Electric arc (or TIG) welding.:(Page Reference: JSAT 4-4):Chapter 4
+4. What is the purpose of shielding an arc weld with an inert gas?:The gas prevents atmospheric oxygen and/or nitrogen from contaminating the weld.:(Page Reference: JSAT 4-4):Chapter 4
+5. What is a common method of controlling expansion when welding a joint?:Place tack welds along the length of the joint.:(Page Reference: JSAT 4-8):Chapter 4
+6. What is the effect of inadequate penetration on a weld?:The weld will be weak.:(Page Reference: JSAT 4-9):Chapter 4
+7. What is the purpose of the flux used with brazing and silve soldering?:The flux cleans the base metal by removing any oxide film.:(Page Reference: JSAT 4-11):Chapter 4
+8. What type of flame is used when torch brazing or silver soldering?:A neutral flame.:(Page Reference: JSAT 4-11):Chapter 4
+9. What must be done to a soldering iron tip to increase the amount of heat transferred from the tip to the work?:The tip must be clean of all contaminates and properly tinned.:(Page Reference: JSAT 4-13):Chapter 4
+10. What is the preferred method for welding aluminum?:Tungesten Inert Gas (TIG) welding.:(Page Reference: JSAT 4-18):Chapter 4
+11. What is the preferred method of welding magnesium?:Tungesten Inert Gas (TIG) welding.:(Page Reference: JSAT 4-18):Chapter 4
+12. What precautions must be observed in order to weld titanium?:All traces of oxygen and nitrogen must be kept away from the weld area.:(Page Reference: JSAT 4-18):Chapter 4
+13. Describe one type of repair that could be made to a dented steel tube cluster joint.:A formed steel patch plate could be welded over the damaged area.:(Page Reference: JSAT 4-20):Chapter 4
+14. How can a soft flame be obtained without reducing the heat output of the torch?:Use a larger tip and adjust the gas pressure accordingly.:(Page Reference: JSAT 4-30):Chapter 4
+15. What factors determine the amount of heat delivered by a gas welding torch?:The size of the torch tip and the gas pressure.:(Page Reference: JSAT 4-30):Chapter 4
+16. When an oxyacetylene torch is extinguished, which valve is turned off first?:Turn of the acetylene gas valve first.:(Page Reference: JSAT 4-34):Chapter 4
+17. When a gas welding project is completed, what safety precatuions should be accomplished?:All the valves are turned off and the gas pressures are relieved.:(Page Reference: JSAT 4-33):Chapter 4
+18. What should be done to a heat-treated aluminum part after welded repairs are completed?:The part must be re-heat treated.:(Page Reference: JSGT 7-7):Chapter 4
+19. Welding magnesium can create a serious safety hazard. What is the nature of this hazard?:Magnesium burns with a very hot flame that is very hard exstinguish.:(Page Reference: JSGT 7-10):Chapter 4
+20. What technique might be used to enable a tight-fitting inner sleeve to be inserted into a tubluar repair?:The inner tube could be chilled with dry ice or in a freezer while the outer tube could be heated slightly with a torch.:(Page Reference: AC 43.13-1B):Chapter 4
+14. What regulation governs the application of the registration numbers to aircraft registered in the United States?:FAR Part 45.:(Page Reference: JSAT 6-31):Chapter 5
+15. Other than appearance, what is another reason for touching up painted surfaces?:Reduction or elimination of general corrosion problems.:(Page Reference: JSGT 12-28):Chapter 5
+16. What references should be used to determine if a control surface must be checked and/or rebalanced after painting?:The manufacturer/'s service manual.:(Page Reference: JSAT 6-29):Chapter 5
+17. What would be the effect if dope was used over paint or enamel?:The dope tends to dissolve these materals.:(Page Reference: AC 43.13-1B):Chapter 5
+18. What are the three most commonly used methods of applying paint?:Dipping, brushing, and spraying.:(Page Reference: FAH):Chapter 5
+19. What is the effect on paint finishes if too much drier is added to the paint?:The paint film will be brittle and tend to crack and peel.:(Page Reference: FAH):Chapter 5
+20. What paint system(s) may be used with epoxy topcoats?:Any paint system in good condition.:(Page Reference: FAH):Chapter 5
+1. Why is butyrate dope safer to use than nitrate dope?:It is much less flammable.:(Page Reference: JSAT 5-3):Chapter 6
+2. What are the two types of dope used for fabric finishes?:Cellulose Nitrate and Cellulose Acetate Butyrate.:(Page Reference: JSAT 5-3):Chapter 6
+3. What is the appearance of a blushing paint finish?:Chalky or cloudy.:(Page Reference: JSAT 6-3):Chapter 6
+4. What finishing defect is the result of a pint room temperature that is too warm?:Pinholes or blisters.:(Page Reference: JSAT 6-3):Chapter 6
+5. What causes dope to blush?:High humidity, moisture in the spray system, or application over a dump surface.:(Page Reference: JSAT 6-3):Chapter 6
+6. What factors cause spray paint sags and runs?:Inadequate surface preparation or paint sprayed on too thickly.:(Page Reference: JSAT 6-3):Chapter 6
+7. What components or parts of the airframe must be protected from damage when using paint stripper?:Windshields and windows, plastics, composites, synthetic rubber, and fabrics.:(Page Reference: JSAT 6-7):Chapter 6
+8. What is the function of zinc-chromate or wash primers?:Primers serve to inhibit corrosion and provide a good bond between the metal and the topcoats.:(Page Reference: JSAT 6-10):Chapter 6
+9. Name serveral common types of paint used on aircraft.:Zinc-chromate and wash primers, synthetic enamels, acrylic lacquer, and polyurethane.:(Page Reference: JSAT 6-9):Chapter 6
+10. What is the proper thinner to use the zinc-chromate primer?:Toluene.:(Page Reference: JSAT 6-16):Chapter 6
+11. What health and safety precautions must be observed when using the toxic solvents and thinners that are part of modern finishing systems?:Respirators and/or masks must be worn when spraying finishes.:(Page Reference: JSAT 6-20):Chapter 6
+12. If spray painting dust causes a surface to appear dry and rough, what are the most likely causes?:Too much air pressure or the spray gun is too far from the surface being painted.:(Page Reference: JSAT 6-26):Chapter 6
+13. What causes /"orange-peel/"?:Spray pressure too high, use of a thinner that dries too fast, cold temperatures, or a damp draft over the surface.:(Page Reference: JSAT 6-30):Chapter 6
+1. What could cause an AC electric motor to run too fast?:Excessive applied voltage or shorted field windings.:(Page Reference: JSAT 7-12):Chapter 7
+2. What tool is used to check a motor or generator armature for shorts and opens under load conditions?:A Growler.:(Page Reference: JSAT 7-16):Chapter 7
+3. When using a Growler, what indication will occur when a short exists between an armature segment?:When a metal blade is held over the armature and a short exists in a segment, the blade will begin to vibrate and /"chatter./":(Page Reference: JSAT 7-16):Chapter 7
+4. How is the output voltage of an alternator controlled?:By varying the field current that excites the alternator.:(Page Reference: JSAT 7-21):Chapter 7
+5. What instruments are used to monitor electrical system loads?:Ammeteres and voltmeters.:(Page Reference: JSAT 7-42):Chapter 7
+6. How would you identify a specific wire in a wire bundle?:By the identification code marked on the wire.:(Page Reference: JSAT 7-64):Chapter 7
+7. What tool would you use tot determine the size of an unmarked wire?:A wire gauge.:(Page Reference: JSAT 7-63):Chapter 7
+8. What color are the navigation light on the wingtips?:The left wingtip is red, the right is green.:(Page Reference: JSAT 7-86):Chapter 7
+9. Name several types of electrical devices that would be considered intermittent loads on an electrical system.:Landing gear, cowl and wing flap motors, radio transmitters.:(Page Reference: JSAT 7-42):Chapter 7
+10. Why would it be necessary to analyze an electrical system before increasing the loas on the system?:To determine that the generator capacity, wire size, and protective device capacity will not be exceeded.:(Page Reference: JSAT 7-43):Chapter 7
+11. What factors should be considered when determining the wire size for a particular application?:The system voltage, permissible voltage drop, current to be carried, wire length, and whether the load is continuous or intermittent.:(Page Reference: JSAT 7-62):Chapter 7
+12. What is the relationship between the inside diameter of a conduit and the outside diameter of the wire bundle inside it?:The conduit must be 25% larger than the wire bundle.:(Page Reference: JSAT 7-67):Chapter 7
+13. What is the maximum number of terminal lugs that can be placed on a single terminal strip stud?:Four.:(Page Reference: JSAT 7-72):Chapter 7
+14. What is the proper length for a bonding jumper?:As short as practical, but long enough to allow free movement of the component.:(Page Reference: JSAT 7-73):Chapter 7
+15. Under what conditions must a switch be derated from its nominal rating?:When used with inductive circuits, circuits with high in-rush current, and with DC motors.:(Page Reference: JSAT 7-80):Chapter 7
+16. At what point do electric motors draw the most current?:When starting.:(Page Reference: JSAT 7-83):Chapter 7
+17. Circuit breakers are designed to open before what condition occurs?:Before the wire emits smoke.:(Page Reference: JSAT 7-83):Chapter 7
+18. At what point in a circuit should the protective device be located?:As close to the power source as possible.:(Page Reference: JSAT 7-83):Chapter 7
+19. What type of circuit breaker may not be used in an aircraft?:An automatic resetting type.:(Page Reference: JSAT 7-85):Chapter 7
+20. What part of an aircraft is identified by a white navigation light?:The tail.:(Page Reference: JSAT 7-87):Chapter 7
+21. What could cause an AC electric motor to run too slowly?:Lack of lubrication, defective wiring, or low applied voltage.:(Page Reference: JSAT 7-99):Chapter 7
+22. What should be done when making bonding or grounding connections between dissimilar materials?:Use a suitable washer so that any corrosion will occur on the washer.:(Page Reference: JSAT 7-73, AC 43.13-1B):Chapter 7
+23.Prior to making a continuity check, what must be done to an electrical circuit?:The power must be turned off.:(Page Reference: JSGT 3-148):Chapter 7
+1. What materials from the bases of the three types of hydraulic fluids?:Vegetable, mineral, and phosphate-esters.:(Page Reference: JSAT 8-9):Chapter 8
+2. What colors denote minerl-based and phosphate-ester-based hydraulic fluids?:Mineral based fluids are red and phosphate-ester based fluids are light purple.:(Page Reference: JSAT 8-9):Chapter 8
+3. What are the results of exposing lacquers, oil-based paint, plastic resins, and vinyl compounds to phosphate-ester-based hydraulic fluid?:The materials will be damaged and/or softened, or the paint will peel.:(Page Reference: JSAT 8-10):Chapter 8
+4. Name several sources used to develop hydraulic pressure.:Hand pumps, engine-driven pumps, and electrically driven pumps.:(Page Reference: JSAT 8-16):Chapter 8
+5. What would cause the bypass valve in a hydraulic filter to open and allow unfiltered fluid to circulate in the system?:A clogged filter element.:(Page Reference: JSAT 8-18):Chapter 8
+6. Describe several methods of pressurizing a hydraulic reservoir.:Engine bleed air, system pressure acting on a small piston in the reservoir, using variable-displacement hydraulic pumps.:(Page Reference: JSAT 8-20):Chapter 8
+7. What feature prevents engine damage if an engine-driven hydraulic pump seizes or is overloaded?:A shear section in the pump driveshaft will break, disconnecting the pump from the engine.:(Page Reference: JSAT 8-27):Chapter 8
+8. Describe the purpose of a pressure relief valve.:Pressure relief valves limit the maximum pressure produced by the pump, thereby preventing failures of the system components.:(Page Reference: JSAT 8-16):Chapter 8
+9. Engine-driven pumps deliver the output fluid flow in what two forms?:As a constant volume or a variable volume.:(Page Reference: JSAT 8-27):Chapter 8
+10. Describe the operation of a gear-type pump.:Two meshed gears, driven by a power source, rotate in a housing. Inlet fluid is carried around the outside of the gears and delivered to the outlet side as the gears rotate.:(Page Reference: JSAT 8-27):Chapter 8
+11. Describe the purpose of a pressure regulator.:Pressure regulators manage the output of the pump to maintain system pressure. They allow the pump to be unloaded so it turns without significant resistance.:(Page Reference: 8-39):Chapter 8
+12. What is the device that is used in some systems to supplement the pump output during periods of high demand?:An accumulator.:(Page Reference: JSAT 8-40):Chapter 8
+1. What unit is an anti-skid system generates the anti-skid warning signal?:The control unit.:(Page Reference: JSAT 10-5):Chapter 10
+2. How is a pilot alerted that an anti-skid system has automatically returned to a manual brake system?:By a warning light.:(Page Reference: JSAT 10-6):Chapter 10
+3. What is the significance of an anti-skid warning?:The system is off or has failed.:(Page Reference: JSAT 10-6):Chapter 10
+4. By what usual  means does the stall warning system in a small aircraft alert the pilot of an impending stall?:An audible alert and/or warning light.:(Page Reference: JSAT 10-11):Chapter 10
+5. What devices are used to provide warnings for a retractable alnding gear system?:A horn or other aural device, and a red warning light or lights.:(Page Reference: JSAT 10-14):Chapter 10
+6. How can a pilot determine  that the landing gear is down and locked?:A green light or lights and/or another type of visual indictaor.:(Page Reference: JSAT 10-14):Chapter 10
+7. Name at least two conditions that would activate a takeoff configuration warning system in a jet transport aircraft.:Incorrect leading or trailing edge flap position, stabilizer position, or speed brake not stowed. The manufacturer may establish other conditions.:(Page Reference: JSAT 10-14):Chapter 10
+8. What landing gear positions must be indicated by regulations?:Down and locked an up and locked.:(Page Reference: JSAT 10-14):Chapter 10
+
