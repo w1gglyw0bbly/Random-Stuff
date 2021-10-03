@@ -1,0 +1,16 @@
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\bin\Debug\netcoreapp3.1\formsapptest.exe
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\bin\Debug\netcoreapp3.1\formsapptest.deps.json
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\bin\Debug\netcoreapp3.1\formsapptest.runtimeconfig.json
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\bin\Debug\netcoreapp3.1\formsapptest.runtimeconfig.dev.json
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\bin\Debug\netcoreapp3.1\formsapptest.dll
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\bin\Debug\netcoreapp3.1\formsapptest.pdb
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.csproj.AssemblyReference.cache
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.Form1.resources
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.csproj.GenerateResource.cache
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.AssemblyInfoInputs.cache
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.AssemblyInfo.cs
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.csproj.CoreCompileInputs.cache
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.dll
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.pdb
+D:\Github Repositories\Random-Stuff\C#\formsapptest\formsapptest\obj\Debug\netcoreapp3.1\formsapptest.genruntimeconfig.cache

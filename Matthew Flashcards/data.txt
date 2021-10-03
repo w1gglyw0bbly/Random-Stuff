@@ -137,7 +137,7 @@
 22. What should be done when making bonding or grounding connections between dissimilar materials?:Use a suitable washer so that any corrosion will occur on the washer.:(Page Reference: JSAT 7-73, AC 43.13-1B):Chapter 7
 23.Prior to making a continuity check, what must be done to an electrical circuit?:The power must be turned off.:(Page Reference: JSGT 3-148):Chapter 7
 1. What materials from the bases of the three types of hydraulic fluids?:Vegetable, mineral, and phosphate-esters.:(Page Reference: JSAT 8-9):Chapter 8
-2. What colors denote minerl-based and phosphate-ester-based hydraulic fluids?:Mineral based fluids are red and phosphate-ester based fluids are light purple.:(Page Reference: JSAT 8-9):Chapter 8
+2. What colors denote mineral-based and phosphate-ester-based hydraulic fluids?:Mineral based fluids are red and phosphate-ester based fluids are light purple.:(Page Reference: JSAT 8-9):Chapter 8
 3. What are the results of exposing lacquers, oil-based paint, plastic resins, and vinyl compounds to phosphate-ester-based hydraulic fluid?:The materials will be damaged and/or softened, or the paint will peel.:(Page Reference: JSAT 8-10):Chapter 8
 4. Name several sources used to develop hydraulic pressure.:Hand pumps, engine-driven pumps, and electrically driven pumps.:(Page Reference: JSAT 8-16):Chapter 8
 5. What would cause the bypass valve in a hydraulic filter to open and allow unfiltered fluid to circulate in the system?:A clogged filter element.:(Page Reference: JSAT 8-18):Chapter 8

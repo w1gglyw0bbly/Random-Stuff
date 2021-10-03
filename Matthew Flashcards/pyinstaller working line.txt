@@ -1,5 +1,8 @@
 PC: pyinstaller main.pyw --onefile --windowed --add-data "D:\Github Repositories\Random-Stuff\Matthew Flashcards\data.txt;."
 Laptop: pyinstaller airplaneFlashCards.py --onefile --windowed --add-data "C:\Users\w1ggl\Documents\GitHub\Random-Stuff\Matthew Flashcards;."
-PC (updater): pyinstaller updater.py --onefile --windowed --add-data "D:\Github Repositories\Random-Stuff\Matthew Flashcards\appInfo.txt;."
+PC (updater): pyinstaller updater.py --onefile --windowed 
+
+//--add-data "D:\Github Repositories\Random-Stuff\Matthew Flashcards\appInfo.txt;."
+
 PC (launcher): pyinstaller launcher.py --onefile --windowed
 PC (installer): pyinstaller installer.py --onefile --windowed
