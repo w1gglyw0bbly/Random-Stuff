@@ -17,9 +17,14 @@ namespace formsapptest
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void startButton_Click(object sender, EventArgs e)
         {
+            Console.Write("bruh");
+        }
 
+        private void selFoldButton_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowDialog();
         }
     }
 }
