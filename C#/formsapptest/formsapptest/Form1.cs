@@ -19,12 +19,18 @@ namespace formsapptest
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            Console.Write("bruh");
+            printsLabel.Text = "bruh";
+            Console.WriteLine("bruh");
         }
 
         private void selFoldButton_Click(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

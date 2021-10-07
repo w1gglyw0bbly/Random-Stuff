@@ -32,6 +32,7 @@ namespace formsapptest
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.startButton = new System.Windows.Forms.Button();
             this.selFoldButton = new System.Windows.Forms.Button();
+            this.printsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // startButton
@@ -54,16 +55,27 @@ namespace formsapptest
             this.selFoldButton.UseVisualStyleBackColor = true;
             this.selFoldButton.Click += new System.EventHandler(this.selFoldButton_Click);
             // 
+            // printsLabel
+            // 
+            this.printsLabel.AutoSize = true;
+            this.printsLabel.Location = new System.Drawing.Point(78, 260);
+            this.printsLabel.Name = "printsLabel";
+            this.printsLabel.Size = new System.Drawing.Size(0, 15);
+            this.printsLabel.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 391);
+            this.Controls.Add(this.printsLabel);
             this.Controls.Add(this.selFoldButton);
             this.Controls.Add(this.startButton);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,6 +83,7 @@ namespace formsapptest
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button selFoldButton;
+        private System.Windows.Forms.Label printsLabel;
     }
 }
 
