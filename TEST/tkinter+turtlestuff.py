@@ -1,7 +1,9 @@
 import turtle as t
 import tkinter as tk
+import tkinter.ttk as ttk
 
 root = tk.Tk()
+style = ttk.Style()
 frame1 = tk.Frame(root)
 frame2 = tk.Frame(root)
 frame1.grid(row = 0, column = 0, sticky = 'w')
@@ -58,7 +60,8 @@ colors = ('Red', 'Blue', 'Yellow', 'Orange', 'Green', 'Purple', 'Pink', 'Black',
 main = tk.StringVar(root, 'Colors')
 current = tk.StringVar(frame2, 'Colors')
 
-bColor = tk.OptionMenu(frame2, current, *colors, command = tColor)
+bColor = ttk.OptionMenu(frame2, current, *colors, command = tColor)
+bColor.config(background = 'red')
 
 for x in range(len(frame1.children)):
     print(len(frame1.children))
