@@ -19,6 +19,7 @@ def sieve(end):
             primes.append(x)
     return primes
 
+'''
 def getPrimes(nonPrimes, end):
     end += 1
     primes = []
@@ -26,5 +27,6 @@ def getPrimes(nonPrimes, end):
         if y not in nonPrimes:
             primes.append(y)
     return primes
+'''
 
 main()
