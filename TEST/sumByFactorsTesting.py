@@ -13,15 +13,23 @@ def sieve(lst):
     return formatPrimes
 
 def sieve2(lst):
-    singlePrimes = [2, 3, 5, 7]
+    primes = [2, 3, 5, 7]
     nonPrimes = []
     for x in lst:
         i = 2
         if x != lst[0]:
             i = x
-        for y in singlePrimes:
+            print(i)
+        for y in primes:
             for z in range(i, int(x / y) + 1):
                 nonPrimes.append(y * z)
     print(nonPrimes)
+
+    for x in lst:
+        for y in range(primes[3] + 4, x):
+            if y not in primes and y not in nonPrimes:
+                primes.append(y)
+    print(primes)
+            
 
 main()
