@@ -23,6 +23,7 @@ div {
 
 .line {
 	border: thick solid black;
+	border-width: 12px;
 	height: 200px;
 	width: 0px;
 	position: relative;

@@ -23,8 +23,9 @@ class piece {
 }
 
 function allowDrop(ev) {
-	if ev.currentTarget.className == 'line'{
-		break;
+	if (ev.currentTarget.className == 'line') {
+		console.log('hit')
+		return 0;
 	}
 	ev.preventDefault();
 }
@@ -34,6 +35,10 @@ function drag(ev) {
 }
 
 function drop(ev) {
+	console.log(ev.currentTarget.className)
+	if (ev.currentTarget.className == 'line') {
+		console.log('bruh');
+	}
 	ev.preventDefault();
 	data = ev.dataTransfer.getData('text');
 	ev.target.appendChild(document.getElementById(data));
