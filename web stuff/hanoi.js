@@ -23,6 +23,9 @@ class piece {
 }
 
 function allowDrop(ev) {
+	if ev.currentTarget.className == 'line'{
+		break;
+	}
 	ev.preventDefault();
 }
 

@@ -16,7 +16,8 @@ div {
 	position: absolute;
 	width: 75%;
 	bottom: 0;
-	left: 80px;
+	left: 0;
+	right: 0;
 	margin: auto;
 }
 
