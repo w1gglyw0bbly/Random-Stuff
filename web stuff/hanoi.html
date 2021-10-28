@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Pog </title>
+<link rel = 'stylesheet' href = 'hanoi.css'>
+</head>
+<body>
+<div id = 'interface'> yes </div>
+<div id = 'columns'>
+
+<div class = "columns" id = 'column1' ondrop = 'drop(event)' ondragover = 'allowDrop(event)'> no 
+<div class = "line"></div>
+<div class = 'block' id = 'firstBlock' draggable = 'true' ondragstart = 'drag(event)'></div>
+</div>
+<div class = "columns" id = 'column2' ondrop = 'drop(event)' ondragover = 'allowDrop(event)'> maybe 
+<div class = "line"></div>
+</div>
+<div class = "columns" id = 'column3' ondrop = 'drop(event)' ondragover = 'allowDrop(event)'> sometimes 
+<div class = "line"></div>
+</div>
+
+</div>
+<script src = 'hanoi.js'></script>
+</body>
+</html>
