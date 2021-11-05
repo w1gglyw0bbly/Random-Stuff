@@ -1,5 +1,5 @@
 def main():
-    primes = sieve2(120)
+    primes = sieve2(10000)
     print(primes)
 
 s = list({s for s in [1,2,3] if s % 2 != 0})
