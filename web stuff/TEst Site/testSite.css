@@ -1,0 +1,15 @@
+p {
+	color: red;
+}
+
+.header {
+	margin: auto;
+	min-height: 10%;
+	width: 80%;
+	text-align: center;
+	vertical-align: middle;
+	background: pink;
+	position: relative;
+	padding-top: 1.7%;
+	font-size: 50px;
+}
