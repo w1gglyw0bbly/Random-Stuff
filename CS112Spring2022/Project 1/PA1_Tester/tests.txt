@@ -1,0 +1,167 @@
+INPUT
+30
+
+OUTPUT
+Sage's Wedding Cake Price Calculator
+Total People Attending: ----------------------------------------
+Cake A
+Labor Cost:     	$237.5
+Cost to Make:   	$272.5
+Charge Customer: 	$299.75
+----------------------------------------
+Cake B
+Labor Cost:     	$235.0
+Cost to Make:   	$265.0
+Charge Customer: 	$291.5
+----------------------------------------
+Cake C
+Labor Cost:     	$258.75
+Cost to Make:   	$298.75
+Charge Customer: 	$328.62
+
+INPUT
+40
+
+OUTPUT
+Sage's Wedding Cake Price Calculator
+Total People Attending: ----------------------------------------
+Cake A
+Labor Cost:     	$316.67
+Cost to Make:   	$363.33
+Charge Customer: 	$399.67
+----------------------------------------
+Cake B
+Labor Cost:     	$313.33
+Cost to Make:   	$353.33
+Charge Customer: 	$388.67
+----------------------------------------
+Cake C
+Labor Cost:     	$345.0
+Cost to Make:   	$398.33
+Charge Customer: 	$438.17
+
+INPUT
+45
+
+OUTPUT
+Sage's Wedding Cake Price Calculator
+Total People Attending: ----------------------------------------
+Cake A
+Labor Cost:     	$356.25
+Cost to Make:   	$408.75
+Charge Customer: 	$449.62
+----------------------------------------
+Cake B
+Labor Cost:     	$352.5
+Cost to Make:   	$397.5
+Charge Customer: 	$437.25
+----------------------------------------
+Cake C
+Labor Cost:     	$388.12
+Cost to Make:   	$448.12
+Charge Customer: 	$492.94
+
+INPUT
+50
+
+OUTPUT
+Sage's Wedding Cake Price Calculator
+Total People Attending: ----------------------------------------
+Cake A
+Labor Cost:     	$395.83
+Cost to Make:   	$454.17
+Charge Customer: 	$499.58
+----------------------------------------
+Cake B
+Labor Cost:     	$391.67
+Cost to Make:   	$441.67
+Charge Customer: 	$485.83
+----------------------------------------
+Cake C
+Labor Cost:     	$431.25
+Cost to Make:   	$497.92
+Charge Customer: 	$547.71
+
+INPUT
+2
+
+OUTPUT
+Sage's Wedding Cake Price Calculator
+Total People Attending: ----------------------------------------
+Cake A
+Labor Cost:     	$15.83
+Cost to Make:   	$18.17
+Charge Customer: 	$19.98
+----------------------------------------
+Cake B
+Labor Cost:     	$15.67
+Cost to Make:   	$17.67
+Charge Customer: 	$19.43
+----------------------------------------
+Cake C
+Labor Cost:     	$17.25
+Cost to Make:   	$19.92
+Charge Customer: 	$21.91
+
+INPUT
+0
+
+OUTPUT
+Sage's Wedding Cake Price Calculator
+Total People Attending: ----------------------------------------
+Cake A
+Labor Cost:     	$0.0
+Cost to Make:   	$0.0
+Charge Customer: 	$0.0
+----------------------------------------
+Cake B
+Labor Cost:     	$0.0
+Cost to Make:   	$0.0
+Charge Customer: 	$0.0
+----------------------------------------
+Cake C
+Labor Cost:     	$0.0
+Cost to Make:   	$0.0
+Charge Customer: 	$0.0
+
+INPUT
+400
+
+OUTPUT
+Sage's Wedding Cake Price Calculator
+Total People Attending: ----------------------------------------
+Cake A
+Labor Cost:     	$3166.67
+Cost to Make:   	$3633.33
+Charge Customer: 	$3996.67
+----------------------------------------
+Cake B
+Labor Cost:     	$3133.33
+Cost to Make:   	$3533.33
+Charge Customer: 	$3886.67
+----------------------------------------
+Cake C
+Labor Cost:     	$3450.0
+Cost to Make:   	$3983.33
+Charge Customer: 	$4381.67
+
+INPUT
+600
+
+OUTPUT
+Sage's Wedding Cake Price Calculator
+Total People Attending: ----------------------------------------
+Cake A
+Labor Cost:     	$4750.0
+Cost to Make:   	$5450.0
+Charge Customer: 	$5995.0
+----------------------------------------
+Cake B
+Labor Cost:     	$4700.0
+Cost to Make:   	$5300.0
+Charge Customer: 	$5830.0
+----------------------------------------
+Cake C
+Labor Cost:     	$5175.0
+Cost to Make:   	$5975.0
+Charge Customer: 	$6572.5
