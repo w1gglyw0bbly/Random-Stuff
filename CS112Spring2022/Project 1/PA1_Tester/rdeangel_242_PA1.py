@@ -1,12 +1,12 @@
 #-------------------------------------------------------------------------------
 # Name: Ronald DeAngelis
-# PA1
+# Assignment 1
 # Due Date: 2/7/2022
 #-------------------------------------------------------------------------------
 # Honor Code Statement: I received no assistance on this assignment that
 # violates the ethical guidelines set forth by professor and class syllabus.
 #-------------------------------------------------------------------------------
-# References: (list resources used - remember, assignments are individual effort!)
+# References: Prior knowledge and Zybook readings
 #-------------------------------------------------------------------------------
 # Comments and assumptions: A note to the grader as to any problems or
 # uncompleted aspects of the assignment, as well as any assumptions about the
