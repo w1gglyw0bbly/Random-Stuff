@@ -1,0 +1,27 @@
+INPUT
+200
+
+OUTPUT
+Please enter a measurement in inches: That is: 
+5 yards, 1 feet, 8 inches.
+
+INPUT
+10000
+
+OUTPUT
+Please enter a measurement in inches: That is: 
+277 yards, 2 feet, 4 inches.
+
+INPUT
+10
+
+OUTPUT
+Please enter a measurement in inches: That is: 
+0 yards, 0 feet, 10 inches.
+
+INPUT
+100000
+
+OUTPUT
+Please enter a measurement in inches: That is: 
+2777 yards, 2 feet, 4 inches.
