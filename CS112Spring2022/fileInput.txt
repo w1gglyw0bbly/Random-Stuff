@@ -1,0 +1,6 @@
+Sentences:
+
+This class is really interesting!
+I enjoy Programming
+I learned a lot this semester.
+I can't wait to learn about file IO.
